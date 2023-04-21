@@ -6,7 +6,7 @@ router.addDefaultHandler(async ({ page, enqueueLinks, log }) => {
     // the number of times you want to click "load more"
     // initial page shows 30 items
     // each additional click is 10 items
-    const maxPages = 25;
+    const maxPages = 5;
     for (let i=0; i<maxPages; i++) {
         console.log(`clicking load more -- ${i} times`);
         await page.pause();
@@ -16,7 +16,11 @@ router.addDefaultHandler(async ({ page, enqueueLinks, log }) => {
 
     log.info(`enqueueing new URLs`);
     await enqueueLinks({
-        globs: ['https://zapier.com/apps/**'],
+        selector: 'a[data-testid="category-app-card--item"]',
+        label: 'detail',
+    });
+    await enqueueLinks({
+        selector: 'a[data-testid="category-app-row--item"]',
         label: 'detail',
     });
 
@@ -37,8 +41,6 @@ router.addHandler('detail', async ({ request, page, log }) => {
     // add templates
     // add triggers and action
     // add rank for each integration
-
-    //await page.waitForSelector('[data-testid="explore-app-header__categories"]'); 
 
     name = await page.locator('h1[class$="Heading-AppHeader__appNames"]').textContent();
     categories = (await page.locator('ul[aria-label="Possible categories"]').textContent())?.replace(/([a-z])([A-Z])/g, '$1, $2');
