@@ -27,27 +27,52 @@ router.addDefaultHandler(async ({ page, enqueueLinks, log }) => {
 });
 
 router.addHandler('detail', async ({ request, page, log }) => {
-    const title = await page.title();
+    const name: string | null = await page.locator('h1[class$="Heading-AppHeader__appNames"]').textContent();
     const url = request.loadedUrl;
 
-    log.info(`${title}`, { url: url });
+    log.info(`${name}`, { url: url });
 
-    let name;
-    let categories;
-    let pairsWith;
+    const is_zapier: boolean = name?.includes("Zapier") || false;
+    const categories = await page.getByTestId('explore-app-header__categories').textContent();
 
     /* todo */
-    // add pairsWith
-    // add templates
     // add triggers and action
-    // add rank for each integration
 
-    name = await page.locator('h1[class$="Heading-AppHeader__appNames"]').textContent();
-    categories = (await page.locator('ul[aria-label="Possible categories"]').textContent())?.replace(/([a-z])([A-Z])/g, '$1, $2');
+    // check to see if premium flag exists
+    let is_premium: boolean | null; 
+    try {
+        is_premium = (await page.getByTestId('explore-app-header__tags').textContent())?.includes("Premium") || false;
+    } catch {
+        is_premium = false;
+    }
+
+    // grab first 6 apps for pairing
+    let pairsWith = [];
+    for (let i=0; i < 6; i++) {
+        try {
+            pairsWith.push(await page.locator('span[class$="AppIntegrationSummary__summary"] h3').nth(i).textContent());
+        } catch {
+            break;
+        }
+    }
+
+    // grab first 10 templates
+    let templates = [];
+    for (let i=0; i < 10; i++) {
+        try {
+            templates.push(await page.locator('h2[class$="-Heading-ZapCard__title"]').nth(i).textContent());
+        } catch {
+            break;
+        }
+    }
 
     await Dataset.pushData({
         name,
+        is_zapier,
+        is_premium,
         categories,
+        pairsWith: pairsWith.join(', '),
+        templates: templates.join(', '),
         url
     });
 });
