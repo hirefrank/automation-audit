@@ -71,8 +71,8 @@ router.addHandler('detail', async ({ request, page, log }) => {
         is_zapier,
         is_premium,
         categories,
-        pairsWith: pairsWith.join(', '),
-        templates: templates.join(', '),
+        pairsWith: pairsWith.join(',\n'),
+        templates: templates.join(',\n'),
         url
     });
 });
