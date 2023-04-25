@@ -8,3 +8,4 @@ crawlee_storage
 storage
 .venv
 *.db
+.DS_Store
