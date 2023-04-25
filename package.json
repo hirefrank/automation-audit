@@ -1,0 +1,29 @@
+{
+    "name": "zapier-crawler",
+    "version": "0.0.1",
+    "type": "module",
+    "description": "This is an example of a Crawlee project.",
+    "dependencies": {
+        "crawlee": "^3.0.0",
+        "playwright": "*"
+    },
+    "devDependencies": {
+        "@apify/tsconfig": "^0.1.0",
+        "ts-node": "^10.8.0",
+        "typescript": "^5.0.0",
+        "@types/node": "^18.0.0"
+    },
+    "scripts": {
+        "build": "tsc",
+        "crawl:zapier": "npm run build && node dist/zapier.js",
+        "crawl:workato": "npm run build && node dist/workato.js",
+        "crawl:power-automate": "npm run build && node dist/power-automate.js",
+        "assemble:zapier": "source .venv/bin/activate && csvs-to-sqlite storage/key_value_stores/zapier/zapier.csv audit.db -f name -f templates",
+        "assemble:workato": "source .venv/bin/activate && csvs-to-sqlite storage/key_value_stores/workato/workato.csv audit.db",
+        "assemble:power-automate": "source .venv/bin/activate && csvs-to-sqlite storage/key_value_stores/power-automate/power-automate.csv audit.db",
+        "publish": "datasette publish vercel audit.db --project automation-audit --metadata metadata.json",
+        "test": "echo \"Error: oops, the actor has no tests yet, sad!\" && exit 1"
+    },
+    "author": "It's not you it's me",
+    "license": "ISC"
+}
