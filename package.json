@@ -4,23 +4,27 @@
     "type": "module",
     "description": "This is an example of a Crawlee project.",
     "dependencies": {
+        "apify": "^3.1.4",
         "crawlee": "^3.0.0",
         "playwright": "*"
     },
     "devDependencies": {
         "@apify/tsconfig": "^0.1.0",
+        "@types/node": "^18.0.0",
         "ts-node": "^10.8.0",
-        "typescript": "^5.0.0",
-        "@types/node": "^18.0.0"
+        "typescript": "^5.0.0"
     },
     "scripts": {
+        "start": "npm run start:dev",
+        "start:prod": "node dist/main.js",
+        "start:dev": "ts-node-esm -T src/power-automate.ts",
         "build": "tsc",
         "crawl:zapier": "node dist/zapier.js",
         "crawl:workato": "node dist/workato.js",
         "crawl:power-automate": "node dist/power-automate.js",
         "assemble:zapier": "source .venv/bin/activate && csvs-to-sqlite storage/key_value_stores/zapier/zapier.csv audit.db -f name -f templates",
-        "assemble:workato": "source .venv/bin/activate && csvs-to-sqlite storage/key_value_stores/workato/workato.csv audit.db",
-        "assemble:power-automate": "source .venv/bin/activate && csvs-to-sqlite storage/key_value_stores/power-automate/power-automate.csv audit.db",
+        "assemble:workato": "source .venv/bin/activate && csvs-to-sqlite storage/key_value_stores/workato/workato.csv audit.db -f name -f description -f templates",
+        "assemble:power-automate": "source .venv/bin/activate && csvs-to-sqlite storage/key_value_stores/power-automate/power-automate.csv audit.db -f name -f description -f templates",
         "publish": "datasette publish vercel audit.db --project automation-audit --metadata metadata.json",
         "test": "echo \"Error: oops, the actor has no tests yet, sad!\" && exit 1"
     },

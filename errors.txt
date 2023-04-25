@@ -1,0 +1,53 @@
+    at file:///Users/fharris/Projects/automation-crawler/src/routes/workato.ts:25:40
+    at runNextTicks (node:internal/process/task_queues:60:5)
+    at processImmediate (node:internal/timers:447:9)
+    at process.topLevelDomainCallback (node:domain:161:15)
+    at process.callbackTrampoline (node:internal/async_hooks:128:24)
+    at async wrap (/Users/fharris/Projects/automation-crawler/node_modules/@apify/src/index.ts:77:27) {"id":"SZH5WGbsPvvSodQ","url":"https://www.workato.com/integrations/freee%E4%BC%9A%E8%A8%88","method":"GET","uniqueKey":"https://www.workato.com/integrations/freee%E4%BC%9A%E8%A8%88"}
+INFO  PlaywrightCrawler: カオナビ integration and workflow automation | Workato {"url":"https://www.workato.com/integrations/%E3%82%AB%E3%82%AA%E3%83%8A%E3%83%93"}
+WARN  PlaywrightCrawler: Reclaiming failed request back to the list or queue. TypeError: Cannot read properties of undefined (reading 'triggers')
+    at file:///Users/fharris/Projects/automation-crawler/src/routes/workato.ts:25:40
+    at async wrap (/Users/fharris/Projects/automation-crawler/node_modules/@apify/src/index.ts:77:27) {"id":"w7lGW1FpwI9arys","url":"https://www.workato.com/integrations/%E3%82%AB%E3%82%AA%E3%83%8A%E3%83%93","retryCount":2}
+INFO  PlaywrightCrawler: Sms77 Sms & Text2Speech Gateway integration and workflow automation | Workato {"url":"https://www.workato.com/integrations/sms77-sms-%26-text2speech-gateway"}
+WARN  PlaywrightCrawler: Reclaiming failed request back to the list or queue. TypeError: Cannot read properties of undefined (reading 'triggers')
+    at file:///Users/fharris/Projects/automation-crawler/src/routes/workato.ts:25:40
+    at async wrap (/Users/fharris/Projects/automation-crawler/node_modules/@apify/src/index.ts:77:27) {"id":"Icn0ofQTbziPBV1","url":"https://www.workato.com/integrations/sms77-sms-&-text2speech-gateway","retryCount":3}
+INFO  PlaywrightCrawler: TCP | Humanity integration and workflow automation | Workato {"url":"https://www.workato.com/integrations/tcp-%7C-humanity"}
+WARN  PlaywrightCrawler: Reclaiming failed request back to the list or queue. TypeError: Cannot read properties of undefined (reading 'triggers')
+    at file:///Users/fharris/Projects/automation-crawler/src/routes/workato.ts:25:40
+    at async wrap (/Users/fharris/Projects/automation-crawler/node_modules/@apify/src/index.ts:77:27) {"id":"Im0Bi2DGWofFrIm","url":"https://www.workato.com/integrations/tcp-%7C-humanity","retryCount":3}
+INFO  PlaywrightCrawler: カオナビ integration and workflow automation | Workato {"url":"https://www.workato.com/integrations/%E3%82%AB%E3%82%AA%E3%83%8A%E3%83%93"}
+WARN  PlaywrightCrawler: Reclaiming failed request back to the list or queue. TypeError: Cannot read properties of undefined (reading 'triggers')
+    at file:///Users/fharris/Projects/automation-crawler/src/routes/workato.ts:25:40
+    at runNextTicks (node:internal/process/task_queues:60:5)
+    at processImmediate (node:internal/timers:447:9)
+    at process.topLevelDomainCallback (node:domain:161:15)
+    at process.callbackTrampoline (node:internal/async_hooks:128:24)
+    at async wrap (/Users/fharris/Projects/automation-crawler/node_modules/@apify/src/index.ts:77:27) {"id":"w7lGW1FpwI9arys","url":"https://www.workato.com/integrations/%E3%82%AB%E3%82%AA%E3%83%8A%E3%83%93","retryCount":3}
+INFO  PlaywrightCrawler: Sms77 Sms & Text2Speech Gateway integration and workflow automation | Workato {"url":"https://www.workato.com/integrations/sms77-sms-%26-text2speech-gateway"}
+ERROR PlaywrightCrawler: Request failed and reached maximum retries. TypeError: Cannot read properties of undefined (reading 'triggers')
+    at file:///Users/fharris/Projects/automation-crawler/src/routes/workato.ts:25:40
+    at async wrap (/Users/fharris/Projects/automation-crawler/node_modules/@apify/src/index.ts:77:27) {"id":"Icn0ofQTbziPBV1","url":"https://www.workato.com/integrations/sms77-sms-&-text2speech-gateway","method":"GET","uniqueKey":"https://www.workato.com/integrations/sms77-sms-&-text2speech-gateway"}
+INFO  Statistics: PlaywrightCrawler request statistics: {"requestAvgFailedDurationMillis":38554,"requestAvgFinishedDurationMillis":34030,"requestsFinishedPerMinute":49,"requestsFailedPerMinute":0,"requestTotalDurationMillis":38331498,"requestsTotal":1126,"crawlerRuntimeMillis":1381271,"retryHistogram":[1122,1,null,3]}
+WARN  PlaywrightCrawler: Status message: Experiencing problems, 3 errors in the past 60 seconds.
+INFO  PlaywrightCrawler: TCP | Humanity integration and workflow automation | Workato {"url":"https://www.workato.com/integrations/tcp-%7C-humanity"}
+ERROR PlaywrightCrawler: Request failed and reached maximum retries. TypeError: Cannot read properties of undefined (reading 'triggers')
+    at file:///Users/fharris/Projects/automation-crawler/src/routes/workato.ts:25:40
+    at async wrap (/Users/fharris/Projects/automation-crawler/node_modules/@apify/src/index.ts:77:27) {"id":"Im0Bi2DGWofFrIm","url":"https://www.workato.com/integrations/tcp-%7C-humanity","method":"GET","uniqueKey":"https://www.workato.com/integrations/tcp-%7C-humanity"}
+INFO  PlaywrightCrawler:AutoscaledPool: state {"currentConcurrency":1,"desiredConcurrency":58,"systemStatus":{"isSystemIdle":false,"memInfo":{"isOverloaded":true,"limitRatio":0.2,"actualRatio":1},"eventLoopInfo":{"isOverloaded":false,"limitRatio":0.6,"actualRatio":0.021},"cpuInfo":{"isOverloaded":false,"limitRatio":0.4,"actualRatio":0},"clientInfo":{"isOverloaded":false,"limitRatio":0.3,"actualRatio":0}}}
+INFO  PlaywrightCrawler: カオナビ integration and workflow automation | Workato {"url":"https://www.workato.com/integrations/%E3%82%AB%E3%82%AA%E3%83%8A%E3%83%93"}
+ERROR PlaywrightCrawler: Request failed and reached maximum retries. TypeError: Cannot read properties of undefined (reading 'triggers')
+    at file:///Users/fharris/Projects/automation-crawler/src/routes/workato.ts:25:40
+    at async wrap (/Users/fharris/Projects/automation-crawler/node_modules/@apify/src/index.ts:77:27) {"id":"w7lGW1FpwI9arys","url":"https://www.workato.com/integrations/%E3%82%AB%E3%82%AA%E3%83%8A%E3%83%93","method":"GET","uniqueKey":"https://www.workato.com/integrations/%E3%82%AB%E3%82%AA%E3%83%8A%E3%83%93"}
+INFO  PlaywrightCrawler: All requests from the queue have been processed, the crawler will shut down.
+INFO  PlaywrightCrawler: Crawl finished. Final request statistics: {"requestsFinished":1123,"requestsFailed":5,"retryHistogram":[1122,1,null,5],"requestAvgFailedDurationMillis":24332,"requestAvgFinishedDurationMillis":34030,"requestsFinishedPerMinute":49,"requestsFailedPerMinute":0,"requestTotalDurationMillis":38337497,"requestsTotal":1128,"crawlerRuntimeMillis":1385917}
+INFO  PlaywrightCrawler: Error analysis: {"totalErrors":5,"uniqueErrors":1,"mostCommonErrors":["5x: Cannot read properties of undefined (reading 'triggers') (at file:///Users/fharris/Projects/automation-crawler/src/routes/workato.ts:25:40)"]}
+INFO  PlaywrightCrawler: Terminal status message: Finished! Total 1128 requests: 1123 succeeded, 5 failed.
+(.venv) fharris@fharris-ltmhwde automation-crawler % 
+
+
+///
+
+power automate
+https://powerautomate.microsoft.com/en-us/connectors/details/shared_excelonlinebusiness/excel-online-business/
+https://powerautomate.microsoft.com/en-us/connectors/details/shared_teams/microsoft-teams/
