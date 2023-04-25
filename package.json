@@ -1,5 +1,5 @@
 {
-    "name": "zapier-crawler",
+    "name": "automation-audit",
     "version": "0.0.1",
     "type": "module",
     "description": "This is an example of a Crawlee project.",
@@ -15,9 +15,9 @@
     },
     "scripts": {
         "build": "tsc",
-        "crawl:zapier": "npm run build && node dist/zapier.js",
-        "crawl:workato": "npm run build && node dist/workato.js",
-        "crawl:power-automate": "npm run build && node dist/power-automate.js",
+        "crawl:zapier": "node dist/zapier.js",
+        "crawl:workato": "node dist/workato.js",
+        "crawl:power-automate": "node dist/power-automate.js",
         "assemble:zapier": "source .venv/bin/activate && csvs-to-sqlite storage/key_value_stores/zapier/zapier.csv audit.db -f name -f templates",
         "assemble:workato": "source .venv/bin/activate && csvs-to-sqlite storage/key_value_stores/workato/workato.csv audit.db",
         "assemble:power-automate": "source .venv/bin/activate && csvs-to-sqlite storage/key_value_stores/power-automate/power-automate.csv audit.db",

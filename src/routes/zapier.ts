@@ -61,7 +61,7 @@ router.addHandler('detail', async ({ request, page, log }) => {
         console.log(`${name} is not premium`);
     }
     
-    const dataset = await Actor.openDataset('some-name');
+    // const dataset = await Actor.openDataset('some-name');
 
     await Dataset.pushData({
         name,
