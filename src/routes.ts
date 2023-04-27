@@ -139,7 +139,6 @@ router.addHandler('zapier', async ({ request, page, log }) => {
         pairsWith,
         url
     });
-
 });
 
 
@@ -198,6 +197,7 @@ router.addHandler('pa-detail', async ({ request, page, enqueueLinks, log }) => {
         categories: [],
         description,
         pairsWith: [],
+        url
     });
 
     await enqueueLinks({
@@ -224,6 +224,7 @@ router.addHandler('workato', async ({ request, page, log }) => {
         categories: [],
         description,
         pairsWith: [],
+        url
     });
 
     // connectors
