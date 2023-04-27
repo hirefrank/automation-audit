@@ -21,7 +21,7 @@
                         "type" 
                     ],
                     "columns": {
-                        "service": "no connectors for power automate"
+                        "service": "not available for power automate"
                     }
                 },
                 "services": {
@@ -33,7 +33,7 @@
                     ],
                     "columns": {
                         "name": "includes premium in parenthesis if it's a premium integration",
-                        "is_builtin": "only used with zapier",
+                        "is_builtin": "not used with power automate",
                         "categories": "only used with zapier",
                         "pairsWith": "only used with zapier"
                     }
