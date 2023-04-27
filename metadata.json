@@ -2,17 +2,44 @@
     "databases": {
         "audit": {
             "tables": {
-                "zapier": {
+                "templates": {
                     "facets": [
-                        "is_zapier", 
-                        "is_premium", 
-                        {"array": "categories"}, 
+                        "service", 
+                        {"array": "integrations"},
+                        "type"
+                    ],
+                    "columns": {
+                        "type": "only used with power automate",
+                        "integrations": "integration names might not be normalized across services",
+                        "usage_count": "not used with zapier; for workato it's copy count",
+                        "author": "for workato it's the user's id"
+                    }
+                },
+                // "connectors": {
+                //     "facets": [
+                //         "type", 
+                //         "service", 
+                //         {"array": "integrations"}
+                //     ],
+                //     "columns": {
+                //         "type": "only used by power automate",
+                //         "integrations": "integration names might not be normalized across services",
+                //         "usage_count": "not used by zapier; for workato it's copy count",
+                //         "author": "for workato it's the user's id"
+                //     }
+                // },
+                "services": {
+                    "facets": [
+                        "service",
+                        "is_builtin",  
+                        {"array": "categories"},
                         {"array": "pairsWith"}
                     ],
                     "columns": {
-                        "is_premium": "Zapier Premium Integration",
-                        "is_zapier": "Zapier Built-in",
-                        "pairsWith": "Suggested integrations to pair with"
+                        "name": "includes premium in parenthesis if it's a premium integration",
+                        "is_builtin": "only used with zapier",
+                        "categories": "only used with zapier",
+                        "pairsWith": "only used with zapier"
                     }
                 }
             }
