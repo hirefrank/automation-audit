@@ -19,17 +19,17 @@ export const datasets = {
 const response = await fetch('https://www.workato.com/_content/adapters-operations');
 export const workato_adapters = await response.json();
 
-const startUrls = [
-    'https://powerautomate.microsoft.com/en-us/connectors/',
-    'https://www.workato.com/integrations',
-    'https://zapier.com/apps'
-];
-
 const crawler = new PlaywrightCrawler({
     // proxyConfiguration: new ProxyConfiguration({ proxyUrls: ['...'] }),
     requestHandler: router,
     headless: true
 });
+
+const startUrls = [
+    'https://powerautomate.microsoft.com/en-us/connectors/',
+    'https://www.workato.com/integrations',
+    'https://zapier.com/apps'
+];
 
 await crawler.run(startUrls);
 
