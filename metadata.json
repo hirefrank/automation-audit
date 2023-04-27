@@ -27,7 +27,7 @@
                 //         "usage_count": "not used by zapier; for workato it's copy count",
                 //         "author": "for workato it's the user's id"
                 //     }
-                // },
+                // },run start:prod
                 "services": {
                     "facets": [
                         "service",
