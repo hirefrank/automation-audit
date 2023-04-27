@@ -15,19 +15,15 @@
                         "author": "for workato it's the user's id"
                     }
                 },
-                // "connectors": {
-                //     "facets": [
-                //         "type", 
-                //         "service", 
-                //         {"array": "integrations"}
-                //     ],
-                //     "columns": {
-                //         "type": "only used by power automate",
-                //         "integrations": "integration names might not be normalized across services",
-                //         "usage_count": "not used by zapier; for workato it's copy count",
-                //         "author": "for workato it's the user's id"
-                //     }
-                // },run start:prod
+                "connectors": {
+                    "facets": [
+                        "service", 
+                        "type" 
+                    ],
+                    "columns": {
+                        "service": "no connectors for power automate"
+                    }
+                },
                 "services": {
                     "facets": [
                         "service",

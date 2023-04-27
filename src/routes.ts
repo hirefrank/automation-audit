@@ -214,11 +214,12 @@ router.addHandler('workato', async ({ request, page, log }) => {
 
     const name = (await page.locator('h1.apps-page__head-title').innerText())?.replace(' integrations and automations', '') as string;
     const description = await page.locator('meta[name="description"]').getAttribute('content') ?? null;
+    const is_builtin: boolean = name?.includes("Workato") || false;
 
     // integrations
     await datasets.service.pushData({
         service,
-        is_builtin: false,
+        is_builtin,
         name,
         categories: [],
         description,
