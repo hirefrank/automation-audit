@@ -4,9 +4,9 @@ import { router } from './routes.js';
 
 
 const dataset_names = {
-    service: 'services',
+    service: 'integrations',
     templates: 'templates',
-    connectors: 'connectors'
+    connectors: 'triggers_actions'
 }
 
 export const datasets = {

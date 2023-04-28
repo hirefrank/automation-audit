@@ -22,7 +22,7 @@
         "assemble:services": "source .venv/bin/activate && csvs-to-sqlite storage/key_value_stores/default/services.csv audit.db -f name -f description",
         "assemble:templates": "source .venv/bin/activate && csvs-to-sqlite storage/key_value_stores/default/templates.csv audit.db -f title -f description",
         "assemble:connectors": "source .venv/bin/activate && csvs-to-sqlite storage/key_value_stores/default/connectors.csv audit.db -f name -f description -f title",
-        "publish": "datasette publish vercel audit.db --project automation-audit --metadata metadata.json --template-dir=templates",
+        "publish": "source .venv/bin/activate && datasette publish vercel audit.db --project automation-audit --metadata metadata.json --template-dir=templates",
         "test": "echo \"Error: oops, the actor has no tests yet, sad!\" && exit 1"
     },
     "author": "It's not you it's me",
