@@ -1,4 +1,6 @@
 {
+    "title": "Audit of Automation Services",
+    "description": "This is dataset includes integrations with Power Automate, Workato, and Zapier integrations.",
     "databases": {
         "audit": {
             "tables": {
@@ -15,7 +17,7 @@
                         "author": "for workato it's the user's id"
                     }
                 },
-                "connectors": {
+                "triggers_actions": {
                     "facets": [
                         "service", 
                         "type" 
@@ -24,7 +26,7 @@
                         "service": "not available for power automate"
                     }
                 },
-                "services": {
+                "inte": {
                     "facets": [
                         "service",
                         "is_builtin",  
