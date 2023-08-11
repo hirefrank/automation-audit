@@ -1,5 +1,5 @@
 // For more information, see https://crawlee.dev/
-import { PlaywrightCrawler, Dataset, Configuration} from 'crawlee';
+import { PlaywrightCrawler, Dataset } from 'crawlee';
 import { router } from './routes.js';
 
 
@@ -26,8 +26,8 @@ const crawler = new PlaywrightCrawler({
 });
 
 const startUrls = [
-    'https://powerautomate.microsoft.com/en-us/connectors/',
-    'https://www.workato.com/integrations',
+    // 'https://powerautomate.microsoft.com/en-us/connectors/',
+    // 'https://www.workato.com/integrations',
     'https://zapier.com/apps'
 ];
 

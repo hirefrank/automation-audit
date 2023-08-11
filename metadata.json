@@ -1,6 +1,6 @@
 {
     "title": "Audit of Automation Services",
-    "description": "This is dataset includes integrations with Power Automate, Workato, and Zapier integrations.",
+    "description": "This is dataset includes integrations with Power Automate, Workato, and Zapier integrations crawled on April 30, 2023.",
     "databases": {
         "audit": {
             "tables": {
@@ -26,7 +26,7 @@
                         "service": "not available for power automate"
                     }
                 },
-                "inte": {
+                "integrations": {
                     "facets": [
                         "service",
                         "is_builtin",  

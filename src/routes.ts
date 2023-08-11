@@ -1,5 +1,6 @@
 import { createPlaywrightRouter} from 'crawlee';
 import { workato_adapters, datasets } from './main.js';
+import { Locator } from 'playwright';
 
 
 export const router = createPlaywrightRouter();
@@ -22,7 +23,7 @@ router.addDefaultHandler(async ({ request, page, enqueueLinks, log }) => {
         // initial page shows 30 items
         // each additional click is 10 items
         // ~1000 results
-        const maxPages = 50;
+        const maxPages = 0;
         for (let i=0; i<maxPages; i++) {
             console.log(`clicking load more -- ${i} times`);
             await page.pause();
@@ -63,12 +64,18 @@ router.addHandler('zapier', async ({ request, page, log }) => {
     const categories = await page.locator('span[data-testid="v3-app-container__categories"] a').allTextContents();
     const description = await page.locator('div[class$="-AppDetails__appDescription"]').innerText();
 
-    // only grabbing the first 9; first page
+    // // only grabbing the first 9; first page
     const pairsWith = (await page.locator('div[class$="-AppIntegrationBrowser__gridWrapper"] h3[class$="-AppIntegrationSummary__appNameBase-AppIntegrationSummary__appNameClamped"]').allTextContents()).slice(0,9);
     
+    // templates
+    while (await page.locator('div[class$="-ZapTemplateList__loadMore"]').getByRole('button').isVisible()) {
+        await page.locator('div[class$="-ZapTemplateList__loadMore"]').click();
+    } 
+
     const templates_css_id = 'div[data-testid="ZapCard__inner"]'
     const num_templates = await page.locator(templates_css_id).count();
-
+    log.info(`${name}`, { num_templates });
+    
     for (let i=0; i<num_templates; i++) {
         const title = await page.locator(`${templates_css_id} h2`).nth(i).textContent();
         const author = await page.locator(`${templates_css_id} span[class$="-ZapCard__authorName"]`).nth(i).textContent();
@@ -86,10 +93,13 @@ router.addHandler('zapier', async ({ request, page, log }) => {
 
     }
 
-    // // triggers
+    // triggers
     await page.locator('button[aria-label="Triggers"]').click()
-    const triggers = await page.locator('div[class$="-TriggerActionList__appActionGrid"] h2').allTextContents();
+    while (await page.locator('div[class$="TriggerActionList__loadMore"]').getByRole('button').isVisible()) {
+        await page.locator('div[class$="TriggerActionList__loadMore"]').click();
+    } 
 
+    const triggers = await page.locator('div[class$="-TriggerActionList__appActionGrid"] h2').allTextContents();
     triggers.forEach(async (item: any) => {
         const title = item.trim();
         const description = null;
@@ -106,8 +116,11 @@ router.addHandler('zapier', async ({ request, page, log }) => {
 
     // actions
     await page.locator('button[aria-label="Actions"]').click()
-    const actions = await page.locator('div[class$="-TriggerActionList__appActionGrid"] h2').allTextContents();
+    while (await page.locator('div[class$="TriggerActionList__loadMore"]').getByRole('button').isVisible()) {
+        await page.locator('div[class$="TriggerActionList__loadMore"]').click();
+    } 
 
+    const actions = await page.locator('div[class$="-TriggerActionList__appActionGrid"] h2').allTextContents();
     actions.forEach(async (item: any) => {
         const title = item.trim();
         const description = null;
