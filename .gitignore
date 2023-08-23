@@ -5,7 +5,7 @@ dist
 node_modules
 apify_storage
 crawlee_storage
-storage
+storage*
 .venv
 *.db
 .DS_Store

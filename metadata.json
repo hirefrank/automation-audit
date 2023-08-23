@@ -1,6 +1,6 @@
 {
     "title": "Audit of Automation Services",
-    "description": "This is dataset includes integrations with Power Automate, Workato, and Zapier integrations crawled on April 30, 2023.",
+    "description": "This is dataset includes integrations for Power Automate, Workato, and Zapier.",
     "databases": {
         "audit": {
             "tables": {
@@ -8,19 +8,19 @@
                     "facets": [
                         "service", 
                         {"array": "integrations"},
-                        "type"
                     ],
                     "columns": {
-                        "type": "only used with power automate",
-                        "integrations": "integration names might not be normalized across services",
-                        "usage_count": "not used with zapier; for workato it's copy count",
+                        "count": "not used with zapier; for workato it's copy count; for power automate it's usage count",
                         "author": "for workato it's the user's id"
                     }
                 },
                 "triggers_actions": {
                     "facets": [
                         "service", 
-                        "type" 
+                        "partner",
+                        "type",
+                        "is_builtin",  
+                        "is_premium"
                     ],
                     "columns": {
                         "service": "not available for power automate"
@@ -28,17 +28,16 @@
                 },
                 "integrations": {
                     "facets": [
+                        "partner",
                         "service",
                         "is_builtin",  
+                        "is_premium",  
                         {"array": "categories"},
-                        {"array": "pairsWith"}
                     ],
                     "columns": {
-                        "name": "includes premium in parenthesis if it's a premium integration",
                         "is_builtin": "not used with power automate",
-                        "categories": "only used with zapier",
-                        "pairsWith": "only used with zapier"
-                    }
+                        "is_premium": "workato doesn't have premium integrations",
+                        "categories": "only used with zapier"                    }
                 }
             }
         }

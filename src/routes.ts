@@ -1,7 +1,6 @@
 import { createPlaywrightRouter} from 'crawlee';
-import { workato_adapters, datasets } from './main.js';
-import { Locator } from 'playwright';
-
+import { workato_adapters, datasets, zapier_premium } from './main.js';
+import { get_parent, normalize_name } from './helper.js';
 
 export const router = createPlaywrightRouter();
 
@@ -9,28 +8,29 @@ router.addDefaultHandler(async ({ request, page, enqueueLinks, log }) => {
     log.info(`enqueueing new URLs`);
     const url = request.url;
     
-    if (url.includes("powerautomate.microsoft.com")) {
-        await page.waitForLoadState('networkidle');
-    
+    if (url.includes("learn.microsoft.com")) {
         await enqueueLinks({
-            selector: 'li[class="connectors_list__parent"] a',
+            selector: 'table[aria-label="Table 1"] a',
             label: 'pa-detail',
-        });       
-    };
+        });
+    }
 
     if (url.includes("zapier.com")) {
+
+        // premium integrations
+        await enqueueLinks({
+            urls: zapier_premium,
+            label: 'zapier',
+        });
+
         // the number of times you want to click "load more"
-        // initial page shows 30 items
-        // each additional click is 10 items
-        // ~1000 results
-        const maxPages = 0;
+        const maxPages = 41;
         for (let i=0; i<maxPages; i++) {
-            console.log(`clicking load more -- ${i} times`);
             await page.pause();
             await page.waitForSelector('div[class$="-CategoryAppTable__loadMore"]'); 
             await page.locator('text=Load more').click()
         }
-    
+
         await enqueueLinks({
             selector: 'a[data-testid="category-app-card--item"]',
             label: 'zapier',
@@ -40,7 +40,7 @@ router.addDefaultHandler(async ({ request, page, enqueueLinks, log }) => {
             selector: 'a[data-testid="category-app-row--item"]',
             label: 'zapier',
         });
-    };
+    }
 
     if (url.includes("workato.com")) {
         await enqueueLinks({
@@ -50,6 +50,7 @@ router.addDefaultHandler(async ({ request, page, enqueueLinks, log }) => {
     };
 
 });
+
 
 router.addHandler('zapier', async ({ request, page, log }) => {
     const service = 'zapier';
@@ -63,77 +64,8 @@ router.addHandler('zapier', async ({ request, page, log }) => {
     const is_builtin: boolean = name?.includes("Zapier") || false;
     const categories = await page.locator('span[data-testid="v3-app-container__categories"] a').allTextContents();
     const description = await page.locator('div[class$="-AppDetails__appDescription"]').innerText();
-
-    // // only grabbing the first 9; first page
-    const pairsWith = (await page.locator('div[class$="-AppIntegrationBrowser__gridWrapper"] h3[class$="-AppIntegrationSummary__appNameBase-AppIntegrationSummary__appNameClamped"]').allTextContents()).slice(0,9);
-    
-    // templates
-    while (await page.locator('div[class$="-ZapTemplateList__loadMore"]').getByRole('button').isVisible()) {
-        await page.locator('div[class$="-ZapTemplateList__loadMore"]').click();
-    } 
-
-    const templates_css_id = 'div[data-testid="ZapCard__inner"]'
-    const num_templates = await page.locator(templates_css_id).count();
-    log.info(`${name}`, { num_templates });
-    
-    for (let i=0; i<num_templates; i++) {
-        const title = await page.locator(`${templates_css_id} h2`).nth(i).textContent();
-        const author = await page.locator(`${templates_css_id} span[class$="-ZapCard__authorName"]`).nth(i).textContent();
-        const integrations = await page.locator(`${templates_css_id} div[class$="-ZapCard__metaInfoArea"]`).nth(i).textContent();
-
-        await datasets.templates.pushData({
-            service,
-            title,
-            description: null,
-            author,
-            type: null,
-            usage_count: 0,
-            integrations: integrations?.split(' + ')
-        });
-
-    }
-
-    // triggers
-    await page.locator('button[aria-label="Triggers"]').click()
-    while (await page.locator('div[class$="TriggerActionList__loadMore"]').getByRole('button').isVisible()) {
-        await page.locator('div[class$="TriggerActionList__loadMore"]').click();
-    } 
-
-    const triggers = await page.locator('div[class$="-TriggerActionList__appActionGrid"] h2').allTextContents();
-    triggers.forEach(async (item: any) => {
-        const title = item.trim();
-        const description = null;
-        const type = 'triggers';
-
-        await datasets.connectors.pushData({
-            service,
-            name,
-            type,
-            title,
-            description
-        });
-    });
-
-    // actions
-    await page.locator('button[aria-label="Actions"]').click()
-    while (await page.locator('div[class$="TriggerActionList__loadMore"]').getByRole('button').isVisible()) {
-        await page.locator('div[class$="TriggerActionList__loadMore"]').click();
-    } 
-
-    const actions = await page.locator('div[class$="-TriggerActionList__appActionGrid"] h2').allTextContents();
-    actions.forEach(async (item: any) => {
-        const title = item.trim();
-        const description = null;
-        const type = 'actions';
-
-        await datasets.connectors.pushData({
-            service,
-            name,
-            type,
-            title,
-            description
-        });
-    });
+    const partner = get_parent(name as string);
+    const normalized_name = normalize_name(name as string);
 
     // check to see if tags exists
     let tag: string | null = null; 
@@ -143,13 +75,113 @@ router.addHandler('zapier', async ({ request, page, log }) => {
     
     if (tag !== null) name = `${name} (${tag})`; 
 
+    const is_premium = (name?.includes("Premium")) ? true : false; 
+    
+    // extract pairs with from templates
+    // // only grabbing the first 9; first page
+    // const pairsWith = (await page.locator('div[class$="-AppIntegrationBrowser__gridWrapper"] h3[class$="-AppIntegrationSummary__appNameBase-AppIntegrationSummary__appNameClamped"]').allTextContents()).slice(0,9);
+    
+    // templates
+    // max 3 pages of templates
+    const maxTP = 3
+    let tp = 0;
+    while (await page.locator('div[class$="-ZapTemplateList__loadMore"]').getByRole('button').isVisible()) {
+        if (tp < maxTP) {
+            await page.pause();
+            await page.locator('div[class$="-ZapTemplateList__loadMore"]').click();
+            tp++;
+        } else {
+            break;
+        }
+    } 
+
+    const templates_css_id = 'div[data-testid="ZapCard__inner"]'
+    const num_templates = await page.locator(templates_css_id).count();
+    log.info(`${name}`, { num_templates });
+    
+    for (let i=0; i<num_templates; i++) {
+        const title = await page.locator(`${templates_css_id} h1`).nth(i).textContent();
+        // const author = await page.locator(`${templates_css_id} span[class$="-ZapCard__authorName"]`).nth(i).textContent();
+        const integrations = await page.locator(`${templates_css_id} div[class$="-ZapCard__metaInfoArea"]`).nth(i).textContent();
+        let norm_integrations: string[] = [];
+        integrations?.split(' + ').forEach(async (row: any) => {
+            norm_integrations.push(normalize_name(row))
+        });
+
+        await datasets.templates.pushData({
+            service,
+            title,
+            description: null,
+            author: 'Zapier',
+            type: null,
+            count: 0,
+            integrations: norm_integrations
+        });
+
+    }
+
+    // triggers
+    await page.locator('button[aria-label="Triggers"]').click()
+    while (await page.locator('div[class$="TriggerActionList__loadMore"]').getByRole('button').isVisible()) {
+        await page.pause();
+        await page.locator('div[class$="TriggerActionList__loadMore"]').click();
+    } 
+
+    const triggers = await page.locator('div[class$="-TriggerActionList__appActionGrid"] h2').allTextContents();
+    const num_triggers = Object.keys(triggers).length;
+    log.info(`${name}`, { num_triggers });
+
+    triggers.forEach(async (item: any) => {
+        const title = item.trim();
+        await datasets.connectors.pushData({
+            partner,
+            normalized_name,
+            service,
+            is_builtin,
+            is_premium,
+            name,
+            type: 'triggers',
+            title,
+            description: null
+        });
+    });
+
+    // actions
+    await page.locator('button[aria-label="Actions"]').click()
+    while (await page.locator('div[class$="TriggerActionList__loadMore"]').getByRole('button').isVisible()) {
+        await page.pause();
+        await page.locator('div[class$="TriggerActionList__loadMore"]').click();
+    } 
+
+    const actions = await page.locator('div[class$="-TriggerActionList__appActionGrid"] h2').allTextContents();
+    const num_actions = Object.keys(actions).length;
+    log.info(`${name}`, { num_actions });
+
+    actions.forEach(async (item: any) => {
+        const title = item.trim();
+        await datasets.connectors.pushData({
+            partner,
+            normalized_name,
+            service,
+            is_builtin,
+            is_premium,
+            name,
+            type: 'steps',
+            title,
+            description: null
+        });
+    });
+
+
     await datasets.service.pushData({
+        partner,
+        normalized_name,        
         service,
         is_builtin,
+        is_premium,
         name,
         categories,
         description,
-        pairsWith,
         url
     });
 });
@@ -167,10 +199,10 @@ router.addHandler('pa-templates', async ({ request, page, response, log }) => {
         const description = item.Description.trim() ?? "";
         const author = item.Author.trim() ?? "";
         const type = item.TemplateType.trim() ?? "";
-        const usage_count = item.UsageCount ?? 0;
+        const count = item.UsageCount ?? 0;
         let integrations: string[] = [];
         (item.Icons).forEach((app: any) => {
-            integrations.push(app.Name.trim());
+            integrations.push(normalize_name(app.Name));
         })
 
         await datasets.templates.pushData({
@@ -179,7 +211,7 @@ router.addHandler('pa-templates', async ({ request, page, response, log }) => {
             description,
             author,
             type,
-            usage_count,
+            count,
             integrations
         });
     });
@@ -191,26 +223,79 @@ router.addHandler('pa-detail', async ({ request, page, enqueueLinks, log }) => {
     const title = await page.title();
     log.info(`${title}`, { url: url });
 
-    let name: string = await page.locator('h1').innerText();
-    const description: string | null = await page.locator('meta[name="description"]').getAttribute('content') ?? null;
-    const app_name = (url?.split('/').at(-3)) ?? "";
+    let name: string = await page.locator('h1').first().innerText();
+    const description: string | null = (await page.locator('div[class="summary"]').textContent())?.trim() ?? "";
+    const app_name = (url?.split('/').at(-2)) ?? "";
+    const partner = get_parent(name as string);
+    const normalized_name = normalize_name(name as string);
 
-    // check to see if tags exists
-    let tag: string | null = null; 
-    try {
-        tag = (await page.locator('span.mc-label').textContent()) || null;
-    } catch (error) {}
-    
-    if (tag !== null) name = `${name} (${tag})`; 
+    const type = await page.locator(`table[aria-label="${name}"] td`).nth(4).textContent() ?? "Standard";
+    if (type == "Premium") name = `${name} (Premium)`;
+
+    const is_premium = (name?.includes("Premium")) ? true : false; 
+    const is_builtin = false;
 
     await datasets.service.pushData({
+        partner,
+        normalized_name,
         service,
-        is_builtin: false,
+        is_builtin,
+        is_premium,
         name,
         categories: [],
         description,
-        pairsWith: [],
-        url
+        url,
+    });
+
+    const headers = await page.locator('div[data-heading-level="h2"]').allInnerTexts();
+    const actions_position = headers.indexOf("Actions");
+    const triggers_position = headers.indexOf("Triggers");
+
+    const tables = await page.locator('div[data-heading-level="h2"] + table tbody');
+    let actions = null;
+    let triggers = null;
+
+    if (actions_position) {
+        actions = await tables.nth(0).locator('tr').allInnerTexts();
+        if (triggers_position) triggers = await tables.nth(1).locator('tr').allInnerTexts();
+    } else if (triggers_position) {
+        triggers = await tables.nth(0).locator('tr').allInnerTexts();
+    }
+    
+    actions?.forEach(async (row: any) => {
+        const data = (row.split("\n")).filter((elm: any) => elm);;
+        const title = data[0].trim();
+        const description = data[1].trim();
+        
+        await datasets.connectors.pushData({
+            partner,
+            normalized_name,
+            service,
+            is_builtin,
+            is_premium,
+            name,
+            type: 'steps',
+            title,
+            description
+        });
+    });
+
+    triggers?.forEach(async (row: any) => {
+        const data = (row.split("\n")).filter((elm: any) => elm);;
+        const title = data[0].trim();
+        const description = data[1].trim();
+        
+        await datasets.connectors.pushData({
+            partner,
+            normalized_name,
+            service,
+            is_builtin,
+            is_premium,
+            name,
+            type: 'triggers',
+            title,
+            description
+        });
     });
 
     await enqueueLinks({
@@ -227,16 +312,21 @@ router.addHandler('workato', async ({ request, page, log }) => {
 
     const name = (await page.locator('h1.apps-page__head-title').innerText())?.replace(' integrations and automations', '') as string;
     const description = await page.locator('meta[name="description"]').getAttribute('content') ?? null;
-    const is_builtin: boolean = name?.includes("Workato") || false;
+    const is_builtin: boolean = (name?.includes("Workato") || name?.includes("Workbot")) || false;
+    const partner = get_parent(name as string);
+    const normalized_name = normalize_name(name as string);
+    const is_premium = false;
 
     // integrations
     await datasets.service.pushData({
+        partner,
+        normalized_name,
         service,
         is_builtin,
+        is_premium,
         name,
         categories: [],
         description,
-        pairsWith: [],
         url
     });
 
@@ -248,12 +338,15 @@ router.addHandler('workato', async ({ request, page, log }) => {
     triggers.forEach(async (item: any) => {
         const title = item.title.trim().replace(/(<([^>]+)>)/gi, "") ?? "";
         const description = item.description.trim().replace(/(<([^>]+)>)/gi, "") ?? "";
-        const type = 'triggers';
 
         await datasets.connectors.pushData({
+            partner,
+            normalized_name,
             service,
+            is_builtin,
+            is_premium,
             name,
-            type,
+            type: 'triggers',
             title,
             description
         });
@@ -262,12 +355,15 @@ router.addHandler('workato', async ({ request, page, log }) => {
     actions.forEach(async (item: any) => {
         const title = item.title.trim().replace(/(<([^>]+)>)/gi, "") ?? "";
         const description = item.description.trim().replace(/(<([^>]+)>)/gi, "") ?? "";
-        const type = 'actions';
 
         await datasets.connectors.pushData({
+            partner,
+            normalized_name,
             service,
+            is_builtin,
+            is_premium,
             name,
-            type,
+            type: 'steps',
             title,
             description
         });
@@ -283,8 +379,11 @@ router.addHandler('workato', async ({ request, page, log }) => {
         const description = item.description.trim() ?? "";
         const author = item.user_id ?? "";
         const type = item.TemplateType ?? "";
-        const integrations = item.applications;
-        const usage_count = item.copy_count ?? 0;
+        let integrations: string[] = [];
+        (item.applications).forEach((app: any) => {
+            integrations.push(normalize_name(app));
+        })
+        const count = item.copy_count ?? 0;
     
         await datasets.templates.pushData({
             service,
@@ -292,7 +391,7 @@ router.addHandler('workato', async ({ request, page, log }) => {
             description,
             author,
             type,
-            usage_count,
+            count,
             integrations
         });
     });

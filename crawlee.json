@@ -1,4 +1,5 @@
 {
-    "CRAWLEE_MEMORY_MBYTES": 24000,
-    "CRAWLEE_PURGE_ON_START": false   
+    "memoryMbytes": 16000,
+    "purgeOnStart": true,
+    "availableMemoryRatio": 0.5
 }
