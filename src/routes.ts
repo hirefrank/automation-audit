@@ -281,7 +281,9 @@ router.addHandler('pa-detail', async ({ request, page, log }) => {
         const count = item.UsageCount ?? 0;
         let integrations: string[] = [];
         (item.Icons).forEach((app: any) => {
-            integrations.push(normalize_name(app.Name));
+            try {
+                integrations.push(normalize_name(app.Name));
+            } catch (error) {}
         })
 
         await datasets.templates.pushData({
