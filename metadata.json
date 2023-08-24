@@ -8,10 +8,12 @@
                     "facets": [
                         "service", 
                         {"array": "integrations"},
+                        "type"
                     ],
                     "columns": {
                         "count": "not used with zapier; for workato it's copy count; for power automate it's usage count",
-                        "author": "for workato it's the user's id"
+                        "author": "for workato it's the user's id",
+                        "type": "only for power automate"
                     }
                 },
                 "triggers_actions": {
