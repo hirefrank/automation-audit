@@ -186,38 +186,7 @@ router.addHandler('zapier', async ({ request, page, log }) => {
     });
 });
 
-
-router.addHandler('pa-templates', async ({ request, page, response, log }) => {
-    const service = 'power-automate';
-    const url = request.loadedUrl;
-    const title = await page.title();
-    log.info("JSON response", { url: url });
-
-    const res = (await response?.json()).value; 
-    res.forEach(async (item: any) => {
-        const title = item.Title.trim() ?? "";
-        const description = item.Description.trim() ?? "";
-        const author = item.Author.trim() ?? "";
-        const type = item.TemplateType.trim() ?? "";
-        const count = item.UsageCount ?? 0;
-        let integrations: string[] = [];
-        (item.Icons).forEach((app: any) => {
-            integrations.push(normalize_name(app.Name));
-        })
-
-        await datasets.templates.pushData({
-            service,
-            title,
-            description,
-            author,
-            type,
-            count,
-            integrations
-        });
-    });
-});
-
-router.addHandler('pa-detail', async ({ request, page, enqueueLinks, log }) => {
+router.addHandler('pa-detail', async ({ request, page, log }) => {
     const service = 'power-automate';
     const url = request.loadedUrl;
     const title = await page.title();
@@ -298,10 +267,33 @@ router.addHandler('pa-detail', async ({ request, page, enqueueLinks, log }) => {
         });
     });
 
-    await enqueueLinks({
-        urls: [`https://powerautomate.microsoft.com/en-us/api/connector/templates/?connectorName=${app_name}`],
-        label: 'pa-templates',
-    });
+    const response = await fetch(`https://powerautomate.microsoft.com/en-us/api/connector/templates/?connectorName=shared_${app_name}`);
+    const templates = await response.json();
+
+    let k: keyof typeof templates.value;
+    for (k in templates.value) {
+        const item = templates.value[k];
+
+        const title = item.Title.trim() ?? "";
+        const description = item.Description.trim() ?? "";
+        const author = item.Author.trim() ?? "";
+        const type = item.TemplateType.trim() ?? "";
+        const count = item.UsageCount ?? 0;
+        let integrations: string[] = [];
+        (item.Icons).forEach((app: any) => {
+            integrations.push(normalize_name(app.Name));
+        })
+
+        await datasets.templates.pushData({
+            service,
+            title,
+            description,
+            author,
+            type,
+            count,
+            integrations
+        });
+    }
 });
 
 router.addHandler('workato', async ({ request, page, log }) => {

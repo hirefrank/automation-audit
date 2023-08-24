@@ -74,8 +74,6 @@ intuit,quickbooks online,zapier,,1,QuickBooks Online Integrations (Premium),trig
 intuit,quickbooks online,zapier,,1,QuickBooks Online Integrations (Premium),triggers,New Vendor,
 intuit,quickbooks online,zapier,,1,QuickBooks Online Integrations (Premium),triggers,New Bill,
 intuit,quickbooks online,zapier,,1,QuickBooks Online Integrations (Premium),triggers,New Estimate,
-intuit,quickbooks online,zapier,,1,QuickBooks Online Integrations (Premium),triggers,New Invoice,
-intuit,quickbooks online,zapier,,1,QuickBooks Online Integrations (Premium),triggers,New Sales Receipt,
 intuit,quickbooks online,zapier,,1,QuickBooks Online Integrations (Premium),triggers,New Purchase Order,
 intuit,quickbooks online,zapier,,1,QuickBooks Online Integrations (Premium),triggers,Updated Customer,
 zoho,zoho crm,zapier,,1,Zoho CRM Integrations (Premium),steps,Add Attachment,
@@ -86,12 +84,10 @@ zoho,zoho crm,zapier,,1,Zoho CRM Integrations (Premium),steps,API Request (Beta)
 zoho,zoho crm,zapier,,1,Zoho CRM Integrations (Premium),steps,Find or Create Contact,
 zoho,zoho crm,zapier,,1,Zoho CRM Integrations (Premium),steps,Create Module Entry,
 zoho,zoho crm,zapier,,1,Zoho CRM Integrations (Premium),steps,Add Tag,
-zoho,zoho crm,zapier,,1,Zoho CRM Integrations (Premium),steps,Create Module Entry,
 zoho,zoho crm,zapier,,1,Zoho CRM Integrations (Premium),steps,Update Related Module Entry,
 zoho,zoho crm,zapier,,1,Zoho CRM Integrations (Premium),steps,App Extensions (Beta),
 zoho,zoho crm,zapier,,1,Zoho CRM Integrations (Premium),steps,Find Module Entry,
 zoho,zoho crm,zapier,,1,Zoho CRM Integrations (Premium),steps,Find or Create Lead,
-intuit,quickbooks online,zapier,,1,QuickBooks Online Integrations (Premium),steps,Create Bill (Item Based),
 intuit,quickbooks online,zapier,,1,QuickBooks Online Integrations (Premium),steps,Create Bill (Item Based),
 intuit,quickbooks online,zapier,,1,QuickBooks Online Integrations (Premium),steps,Create Customer,
 intuit,quickbooks online,zapier,,1,QuickBooks Online Integrations (Premium),steps,Create Expense,
@@ -163,7 +159,6 @@ xero,xero,zapier,,1,Xero Integrations (Premium),triggers,New Payment,
 xero,xero,zapier,,1,Xero Integrations (Premium),triggers,New Expense Claim Receipt,
 paypal,paypal,zapier,,1,PayPal Integrations (Premium),triggers,Successful Sale,
 paypal,paypal,zapier,,1,PayPal Integrations (Premium),triggers,Refunded Sale,
-paypal,paypal,zapier,,1,PayPal Integrations (Premium),triggers,Successful Sale,
 paypal,paypal,zapier,,1,PayPal Integrations (Premium),triggers,All Merchant Transactions,
 xero,xero,zapier,,1,Xero Integrations (Premium),steps,Add Items to Existing Sales Invoice,
 xero,xero,zapier,,1,Xero Integrations (Premium),steps,Create Bank Transfer,
@@ -185,7 +180,6 @@ keap max classic,keap max classic,zapier,,1,Keap Max Classic Integrations (Premi
 keap max classic,keap max classic,zapier,,1,Keap Max Classic Integrations (Premium),triggers,New Company,
 keap max classic,keap max classic,zapier,,1,Keap Max Classic Integrations (Premium),triggers,New Contact Action,
 keap max classic,keap max classic,zapier,,1,Keap Max Classic Integrations (Premium),triggers,Credit Card Charge,
-keap max classic,keap max classic,zapier,,1,Keap Max Classic Integrations (Premium),triggers,New Invoice,
 keap max classic,keap max classic,zapier,,1,Keap Max Classic Integrations (Premium),triggers,New Invoice,
 keap max classic,keap max classic,zapier,,1,Keap Max Classic Integrations (Premium),triggers,New Product,
 keap max classic,keap max classic,zapier,,1,Keap Max Classic Integrations (Premium),triggers,Cancelled Subscription,
@@ -465,10 +459,7 @@ magento,magento,zapier,,1,Magento Integrations (Premium),triggers,New Product,
 magento,magento,zapier,,1,Magento Integrations (Premium),triggers,New Order,
 magento,magento,zapier,,1,Magento Integrations (Premium),triggers,New Sales Order Shipment,
 magento,magento,zapier,,1,Magento Integrations (Premium),triggers,New Sales Order Credit Memo,
-magento,magento,zapier,,1,Magento Integrations (Premium),triggers,New Sales Order Shipment,
 magento,magento,zapier,,1,Magento Integrations (Premium),triggers,New Customer,
-magento,magento,zapier,,1,Magento Integrations (Premium),triggers,New Sales Order Invoice,
-magento,magento,zapier,,1,Magento Integrations (Premium),triggers,New Order,
 magento,magento,zapier,,1,Magento Integrations (Premium),triggers,New Sales Order Invoice,
 amazon,amazon ec2,zapier,,1,Amazon EC2 Integrations (Premium),steps,Start/Stop Instance,
 amazon,amazon ec2,zapier,,1,Amazon EC2 Integrations (Premium),steps,Find Instance,
@@ -546,7 +537,6 @@ solve crm,solve crm,zapier,,1,Solve CRM Integrations (Premium),steps,Create Comp
 solve crm,solve crm,zapier,,1,Solve CRM Integrations (Premium),steps,Create Contact,
 salesforce,salesforce,workato,,,Salesforce,triggers,Monitor changes in a record,Monitor changes in a record in Salesforce
 salesforce,salesforce,workato,,,Salesforce,triggers,New record,New record in Salesforce
-salesforce,salesforce,workato,,,Salesforce,triggers,New record,New record in Salesforce
 salesforce,salesforce,workato,,,Salesforce,triggers,New Outbound message,New Outbound message in Salesforce
 salesforce,salesforce,workato,,,Salesforce,triggers,New platform event,New  event in Salesforce
 salesforce,salesforce,workato,,,Salesforce,triggers,New PushTopic event,New PushTopic event in Salesforce
@@ -561,7 +551,6 @@ salesforce,salesforce,workato,,,Salesforce,triggers,New/updated records,"New/upd
 salesforce,salesforce,workato,,,Salesforce,triggers,Threshold met for new records created,"Threshold met for new records
         created in Salesforce"
 salesforce,salesforce,workato,,,Salesforce,triggers,Deleted record,Record deleted in Salesforce
-salesforce,salesforce,workato,,,Salesforce,triggers,New/updated record,New/updated record in Salesforce
 salesforce,salesforce,workato,,,Salesforce,triggers,New/updated record,New/updated record in Salesforce
 salesforce,salesforce,workato,,,Salesforce,steps,Custom action,Custom action in Salesforce (Custom)
 salesforce,salesforce,workato,,,Salesforce,steps,Approve record in approval process,Approve a record in approval process in Salesforce
@@ -613,11 +602,9 @@ snowflake,snowflake,workato,,,Snowflake,steps,Update rows,Update rows in a table
 snowflake,snowflake,workato,,,Snowflake,steps,Upsert rows,Upsert batch of rows in a table in Snowflake
 zendesk,zendesk,workato,,,Zendesk,triggers,New organization,New organization in Zendesk
 zendesk,zendesk,workato,,,Zendesk,triggers,New ticket,New ticket in Zendesk
-zendesk,zendesk,workato,,,Zendesk,triggers,New ticket,New ticket in Zendesk
 zendesk,zendesk,workato,,,Zendesk,triggers,New/updated records,Trigger processes batches of new or updated records
 zendesk,zendesk,workato,,,Zendesk,triggers,New user,New user in Zendesk
 zendesk,zendesk,workato,,,Zendesk,triggers,New/updated organization,New/updated organization in Zendesk
-zendesk,zendesk,workato,,,Zendesk,triggers,New/updated ticket,New/updated ticket in Zendesk
 zendesk,zendesk,workato,,,Zendesk,triggers,New/updated ticket,New/updated ticket in Zendesk
 zendesk,zendesk,workato,,,Zendesk,triggers,New/updated user,New/updated user in Zendesk
 zendesk,zendesk,workato,,,Zendesk,steps,Custom action,Custom action in Zendesk (Custom)
@@ -669,7 +656,6 @@ slack,slack,workato,,,Slack,steps,Unarchive conversation,Unarchive conversation 
 marketo,marketo,workato,,,Marketo,triggers,New lead activity batch,New lead activity batch in Marketo
 marketo,marketo,workato,,,Marketo,triggers,New lead,New lead in Marketo
 marketo,marketo,workato,,,Marketo,triggers,New Marketo Self Service Flow Step,New Marketo Self Service Flow Step in Marketo
-marketo,marketo,workato,,,Marketo,triggers,New/updated lead,New/updated lead in Marketo
 marketo,marketo,workato,,,Marketo,triggers,New/updated lead,New/updated lead in Marketo
 marketo,marketo,workato,,,Marketo,steps,Custom action,Custom action in Marketo (Custom)
 marketo,marketo,workato,,,Marketo,steps,Activate smart campaign,Activate smart campaign in Marketo
@@ -764,7 +750,6 @@ hubspot,hubspot,workato,,,HubSpot,steps,Search record,Search record in HubSpot
 hubspot,hubspot,workato,,,HubSpot,steps,Update record,Update a record in HubSpot
 hubspot,hubspot,workato,,,HubSpot,steps,Update records,Update records in HubSpot
 workday,workday,workato,,,Workday,triggers,New/updated business object,New/updated business object in Workday
-workday,workday,workato,,,Workday,triggers,New/updated business object,New/updated business object in Workday
 workday,workday,workato,,,Workday,triggers,Scheduled report fetch,Scheduled report in Workday
 workday,workday,workato,,,Workday,triggers,Scheduled report fetch using WQL,Scheduled report in Workday using WQL
 workday,workday,workato,,,Workday,steps,Get business object details,Get business object in Workday
@@ -844,7 +829,6 @@ oracle,netsuite,workato,,,NetSuite,steps,Upsert standard record,Upsert standard 
 oracle,netsuite,workato,,,NetSuite,steps,Upsert standard records in batch,Upsert standard records in batch in Netsuite
 oracle,netsuite,workato,,,NetSuite,steps,Upsert standard records in bulk,Upsert records in bulk in Netsuite
 servicenow,servicenow,workato,,,ServiceNow,triggers,New record,New record in a table in ServiceNow
-servicenow,servicenow,workato,,,ServiceNow,triggers,New record,New record in a table in ServiceNow
 servicenow,servicenow,workato,,,ServiceNow,triggers,New record,"New record
         in a table in ServiceNow"
 servicenow,servicenow,workato,,,ServiceNow,triggers,New/updated record,"New/updated record
@@ -854,7 +838,6 @@ servicenow,servicenow,workato,,,ServiceNow,triggers,Export new records,"Export n
 servicenow,servicenow,workato,,,ServiceNow,triggers,Export new/updated records,"Export new/updated records
         in a table in ServiceNow"
 servicenow,servicenow,workato,,,ServiceNow,triggers,Scheduled record search,Scheduled record search using query in ServiceNow
-servicenow,servicenow,workato,,,ServiceNow,triggers,New/updated record,New/updated record in a table in ServiceNow
 servicenow,servicenow,workato,,,ServiceNow,triggers,New/updated record,New/updated record in a table in ServiceNow
 servicenow,servicenow,workato,,,ServiceNow,steps,Custom action,Custom action in ServiceNow (Custom)
 servicenow,servicenow,workato,,,ServiceNow,steps,Create record,Create record in a table  in ServiceNow
@@ -998,10 +981,8 @@ atlassian,jira,workato,,,Jira,triggers,Export new issues in Jira,Export new  iss
 atlassian,jira,workato,,,Jira,triggers,Export new/updated issues in Jira,Export new/updated  issues  in Jira
 atlassian,jira,workato,,,Jira,triggers,New event,New  event in Jira
 atlassian,jira,workato,,,Jira,triggers,New issue,New issue in Jira
-atlassian,jira,workato,,,Jira,triggers,New issue,New issue in Jira
 atlassian,jira,workato,,,Jira,triggers,New project,New project in Jira
 atlassian,jira,workato,,,Jira,triggers,New/updated comment,New/updated comment in Jira
-atlassian,jira,workato,,,Jira,triggers,Updated issue,Updated issue in Jira
 atlassian,jira,workato,,,Jira,triggers,Updated issue,Updated issue in Jira
 atlassian,jira,workato,,,Jira,triggers,New/updated issue,New/updated issue in Jira
 atlassian,jira,workato,,,Jira,triggers,New/updated worklog,New/updated worklog in Jira
@@ -1287,7 +1268,6 @@ agiloft,agiloft,workato,,,Agiloft,steps,Upload attachment,Upload attachment into
 airregi,airregi,workato,,,AirREGI,triggers,New refund,New refund in AirREGI
 airregi,airregi,workato,,,AirREGI,triggers,New sale,New sale in AirREGI
 adp,adp workforce now,workato,,,ADP Workforce Now,triggers,Scheduled worker search,Scheduled worker search in ADP Workforce Now
-adp,adp workforce now,workato,,,ADP Workforce Now,steps,Custom action,Custom action in ADP Workforce Now (Custom)
 adp,adp workforce now,workato,,,ADP Workforce Now,steps,Onboard applicant,Onboard applicant in ADP Workforce Now
 aircall,aircall,workato,,,Aircall,steps,Custom action,Custom action in Aircall (Custom)
 aircall,aircall,workato,,,Aircall,steps,Add a User in a Team,Add a User in a Team in Aircall
@@ -1642,7 +1622,7 @@ applaud,applaud,workato,,,Applaud,steps,Update instances in batches,Update  in b
 applaud,applaud,workato,,,Applaud,steps,File upload,Upload a File in Applaud
 applaud,applaud,workato,,,Applaud,steps,Upsert an instance,Upsert  instance in Applaud
 applaud,applaud,workato,,,Applaud,steps,Upsert instances in batches,Upsert  in batches in Applaud
-ariba,ariba,workato,,,Ariba,triggers,New invoice,New  invoice  in  Ariba 
+ariba,ariba,workato,,,Ariba,triggers,New invoice,New  invoice  in  Ariba
 ariba,ariba,workato,,,Ariba,triggers,New purchase order,New purchase order in Ariba
 ariba,ariba,workato,,,Ariba,steps,Create new invoice,Create new invoice in Ariba
 apttus intelligent cloud,apttus intelligent cloud,workato,,,Apttus Intelligent Cloud,triggers,New object,New object in Apttus Intelligent Cloud
@@ -1829,9 +1809,7 @@ bigtincan,bigtincan,workato,,,Bigtincan,steps,List forms,List forms in Bigtincan
 bigtincan,bigtincan,workato,,,Bigtincan,steps,List stories,List stories in Bigtincan
 bigtincan,bigtincan,workato,,,Bigtincan,steps,Update story,Update story in Bigtincan
 bamboohr,bamboohr,workato,,,BambooHR,triggers,New employee,New employee in BambooHR
-bamboohr,bamboohr,workato,,,BambooHR,triggers,New employee,New employee in BambooHR
 bamboohr,bamboohr,workato,,,BambooHR,triggers,Schedule custom employee report,Scheduled report in BambooHR
-bamboohr,bamboohr,workato,,,BambooHR,triggers,New/updated employee,New/updated employee in BambooHR
 bamboohr,bamboohr,workato,,,BambooHR,triggers,New/updated employee,New/updated employee in BambooHR
 bamboohr,bamboohr,workato,,,BambooHR,steps,Custom action,Custom action in BambooHR (Custom)
 bamboohr,bamboohr,workato,,,BambooHR,steps,Create employee,Create employee in BambooHR
@@ -1931,7 +1909,6 @@ basecamp,basecamp 2,workato,,,Basecamp 2,steps,Search calendars,Search for a cal
 basecamp,basecamp 2,workato,,,Basecamp 2,steps,Search persons,Search for a person in Basecamp 2
 basecamp,basecamp 2,workato,,,Basecamp 2,steps,Search projects,Search for a project in Basecamp 2
 big commerce,big commerce,workato,,,Big Commerce,triggers,New record,New record in BigCommerce
-big commerce,big commerce,workato,,,Big Commerce,triggers,New or updated record,New or updated record in BigCommerce
 big commerce,big commerce,workato,,,Big Commerce,triggers,New or updated record,New or updated record in BigCommerce
 big commerce,big commerce,workato,,,Big Commerce,steps,Custom action,Custom action in  (Custom)
 big commerce,big commerce,workato,,,Big Commerce,steps,Create record,Create record in BigCommerce
@@ -2625,7 +2602,7 @@ confluence,confluence,workato,,,Confluence,steps,Create task,Create task in Conf
 confluence,confluence,workato,,,Confluence,steps,Search pages,Search for pages in Confluence
 coupa hiperos,coupa hiperos,workato,,,Coupa Hiperos,steps,Custom action,Custom action in  (Custom)
 coupa hiperos,coupa hiperos,workato,,,Coupa Hiperos,steps,Upload CSV,Upload CSV in Coupa Hiperos
-credly,credly,workato,,,Credly,steps,Custom action,Custom action in  Credly 
+credly,credly,workato,,,Credly,steps,Custom action,Custom action in  Credly
 credly,credly,workato,,,Credly,steps,Get Badges in Bulk,Get Badges in Bulk from Credly
 credly,credly,workato,,,Credly,steps,Issue Badge,Issue a Badge on Credly
 credly,credly,workato,,,Credly,steps,Replace Badge,Replace a Badge on Credly
@@ -2799,7 +2776,7 @@ epic,epic,workato,,,Epic,steps,Search for patient,Search for patient with Date o
 duo security,duo security,workato,,,Duo Security,triggers,New authentication event,New authentication event in Duo Security
 duo security,duo security,workato,,,Duo Security,triggers,New bypass code,New bypass code event in Duo Security
 duo security,duo security,workato,,,Duo Security,triggers,New endpoint,New endpoint event in Duo Security
-duo security,duo security,workato,,,Duo Security,steps,Custom action,         Custom action in         Duo Security
+duo security,duo security,workato,,,Duo Security,steps,Custom action,Custom action in         Duo Security
 duo security,duo security,workato,,,Duo Security,steps,Get bypass code by ID,Get Bypass code by ID in Duo Security
 duo security,duo security,workato,,,Duo Security,steps,Get endpoint by ID,Get Endpoint by ID in Duo Security
 duo security,duo security,workato,,,Duo Security,steps,Get user by ID,Get User by ID in Duo Security
@@ -2875,7 +2852,6 @@ eventbrite,eventbrite,workato,,,Eventbrite,triggers,New contact created,New cont
 eventbrite,eventbrite,workato,,,Eventbrite,triggers,New event created,New event created in Eventbrite
 eventbrite,eventbrite,workato,,,Eventbrite,triggers,New attendee registered for event,New event attendee registered in Eventbrite
 eventbrite,eventbrite,workato,,,Eventbrite,triggers,New order for event,New order for event in Eventbrite
-eventbrite,eventbrite,workato,,,Eventbrite,triggers,New/updated attendee registered for event,New/updated event attendee registered in Eventbrite
 eventbrite,eventbrite,workato,,,Eventbrite,triggers,New/updated attendee registered for event,New/updated event attendee registered in Eventbrite
 eventbrite,eventbrite,workato,,,Eventbrite,triggers,New/updated order for event,New/updated order for event in Eventbrite
 eventbrite,eventbrite,workato,,,Eventbrite,steps,Custom action,Custom action in Eventbrite (Custom)
@@ -3114,9 +3090,9 @@ ftp/ftps,ftp/ftps,workato,,,FTP/FTPS,steps,Rename file,Rename a file on FTP/FTPS
 ftp/ftps,ftp/ftps,workato,,,FTP/FTPS,steps,Get file information,Get information about file via its exact file path on FTP-S server
 ftp/ftps,ftp/ftps,workato,,,FTP/FTPS,steps,Download large file,Download large file contents from FTP/FTPS server
 ftp/ftps,ftp/ftps,workato,,,FTP/FTPS,steps,Upload file,Upload a file to FTP/FTPS server
-form assembly,form assembly,workato,,,Form Assembly,steps,Get connector by ID,Get connector details in  FormAssembly 
-form assembly,form assembly,workato,,,Form Assembly,steps,List connectors,List connectors in FormAssembly 
-form assembly,form assembly,workato,,,Form Assembly,steps,List forms,List forms in  FormAssembly 
+form assembly,form assembly,workato,,,Form Assembly,steps,Get connector by ID,Get connector details in  FormAssembly
+form assembly,form assembly,workato,,,Form Assembly,steps,List connectors,List connectors in FormAssembly
+form assembly,form assembly,workato,,,Form Assembly,steps,List forms,List forms in  FormAssembly
 fountain,fountain,workato,,,Fountain,steps,Custom action,Custom action in  (Custom)
 fountain,fountain,workato,,,Fountain,steps,Create a New Applicant,Create a New Applicant in Fountain connector
 fountain,fountain,workato,,,Fountain,steps,Delete an Applicant,Delete an Applicant in Fountain connector
@@ -3242,7 +3218,6 @@ google,google docs,workato,,,Google Docs,steps,Custom action,Custom action in Go
 google,google docs,workato,,,Google Docs,steps,Get document,Get document in Google Docs
 google,google docs,workato,,,Google Docs,steps,Update document,Update document in Google Docs
 google,google pubsub,workato,,,Google PubSub,triggers,New message,New Message in Google Pub/Sub
-google,google pubsub,workato,,,Google PubSub,triggers,New message,New Message in Google Pub/Sub
 google,google pubsub,workato,,,Google PubSub,steps,Custom action,Custom action in  (Custom)
 google,google pubsub,workato,,,Google PubSub,steps,Create subscription,Create Subscription in Google Pub/Sub
 google,google pubsub,workato,,,Google PubSub,steps,Custom action (Deprecated),Custom action in Google Pub/Sub
@@ -3308,7 +3283,7 @@ google,google drive,workato,,,Google Drive,steps,Search files or folders,Search 
 google,google drive,workato,,,Google Drive,steps,Upload small file,Upload small file to Google Drive
 google,google drive,workato,,,Google Drive,steps,Upload large file,Upload large file to Google Drive
 cisco amp,cisco amp,workato,,,Cisco Amp,steps,Create group,Create group in Cisco AMP
-cisco amp,cisco amp,workato,,,Cisco Amp,steps,Custom action,         Custom action in         Cisco AMP
+cisco amp,cisco amp,workato,,,Cisco Amp,steps,Custom action,Custom action in         Cisco AMP
 cisco amp,cisco amp,workato,,,Cisco Amp,steps,Delete computer,Delete computer in Cisco AMP
 cisco amp,cisco amp,workato,,,Cisco Amp,steps,Delete group,Delete group in Cisco AMP
 cisco amp,cisco amp,workato,,,Cisco Amp,steps,Get computers by user,Get computers by user name in Cisco AMP
@@ -3394,10 +3369,8 @@ google,google forms,workato,,,Google Forms,steps,Search records,Search for recor
 google,google translate,workato,,,Google Translate,steps,Custom action,Custom action in Google Translate (Custom)
 google,google translate,workato,,,Google Translate,steps,Translate text,Translate a text to another language
 google,google sheets,workato,,,Google Sheets,triggers,New row in sheet in My Drive,New row in a sheet in Google Sheets
-google,google sheets,workato,,,Google Sheets,triggers,New row in sheet in My Drive,New row in a sheet in Google Sheets
 google,google sheets,workato,,,Google Sheets,triggers,New row in sheet in Team Drive,New row in a sheet in Google Sheets
 google,google sheets,workato,,,Google Sheets,triggers,New/updated row in sheet in Team Drive,New/updated row in a sheet in Google Sheets
-google,google sheets,workato,,,Google Sheets,triggers,New/updated row in sheet in My Drive,New/updated row in a sheet in Google Sheets
 google,google sheets,workato,,,Google Sheets,triggers,New/updated row in sheet in My Drive,New/updated row in a sheet in Google Sheets
 google,google sheets,workato,,,Google Sheets,steps,Custom action,Custom action in Google Sheets (Custom)
 google,google sheets,workato,,,Google Sheets,steps,Add rows in bulk,Add multiple rows in a sheet in Google Sheets
@@ -4158,7 +4131,7 @@ medallia experience cloud,medallia experience cloud,workato,,,Medallia Experienc
 medallia experience cloud,medallia experience cloud,workato,,,Medallia Experience Cloud,steps,Import data,Import data via  importer into Medallia Experience Cloud
 microsoft,microsoft graph api,workato,,,Microsoft Graph Api,triggers,New row in sheet,New row in Microsoft Office 365 Excel sheet
 microsoft,microsoft graph api,workato,,,Microsoft Graph Api,steps,Create record,Create record using Microsoft Graph
-microsoft,microsoft graph api,workato,,,Microsoft Graph Api,steps,Custom action,       Custom action using       Microsoft Graph
+microsoft,microsoft graph api,workato,,,Microsoft Graph Api,steps,Custom action,Custom action using       Microsoft Graph
 microsoft,microsoft graph api,workato,,,Microsoft Graph Api,steps,Delete record,Delete record using Microsoft Graph
 microsoft,microsoft graph api,workato,,,Microsoft Graph Api,steps,Download file,Download file using Microsoft Graph
 microsoft,microsoft graph api,workato,,,Microsoft Graph Api,steps,Get record,Get record using Microsoft Graph
@@ -4221,18 +4194,15 @@ microsoft,microsoft dynamics 365,workato,,,Microsoft Dynamics 365,triggers,Delet
 microsoft,microsoft dynamics 365,workato,,,Microsoft Dynamics 365,triggers,New object,New object in Microsoft Dynamics 365
 microsoft,microsoft dynamics 365,workato,,,Microsoft Dynamics 365,triggers,New or updated object (batch),New or updated object (batch) in Microsoft Dynamics 365
 microsoft,microsoft dynamics 365,workato,,,Microsoft Dynamics 365,triggers,New or updated object,New or updated object in Microsoft Dynamics 365
-microsoft,microsoft dynamics 365,workato,,,Microsoft Dynamics 365,triggers,New object,New object in Microsoft Dynamics 365
 microsoft,microsoft dynamics 365,workato,,,Microsoft Dynamics 365,triggers,Scheduled object search,Scheduled object search in Microsoft Dynamics 365
 microsoft,microsoft dynamics 365,workato,,,Microsoft Dynamics 365,triggers,New/updated object,New/updated object in Microsoft Dynamics 365
 microsoft,microsoft dynamics 365,workato,,,Microsoft Dynamics 365,steps,Custom action,Custom action in Microsoft Dynamics 365 (Custom)
 microsoft,microsoft dynamics 365,workato,,,Microsoft Dynamics 365,steps,Close case,Close case in Microsoft Dynamics 365
 microsoft,microsoft dynamics 365,workato,,,Microsoft Dynamics 365,steps,Create object,Create object in Microsoft Dynamics 365
-microsoft,microsoft dynamics 365,workato,,,Microsoft Dynamics 365,steps,Create object,Create object in Microsoft Dynamics 365
 microsoft,microsoft dynamics 365,workato,,,Microsoft Dynamics 365,steps,Get object by ID,Get object by ID in Microsoft Dynamics 365
 microsoft,microsoft dynamics 365,workato,,,Microsoft Dynamics 365,steps,Get object schema,"Get object
          schema from Microsoft Dynamics 365"
 microsoft,microsoft dynamics 365,workato,,,Microsoft Dynamics 365,steps,Search objects,Search objects in Microsoft Dynamics 365
-microsoft,microsoft dynamics 365,workato,,,Microsoft Dynamics 365,steps,Update object,Update object in Microsoft Dynamics 365
 microsoft,microsoft dynamics 365,workato,,,Microsoft Dynamics 365,steps,Update object,Update object in Microsoft Dynamics 365
 microsoft,microsoft dynamics finance and operations,workato,,,Microsoft Dynamics Finance And Operations,steps,Create record,Create record in Microsoft Dynamics Finance and Operations
 microsoft,microsoft dynamics finance and operations,workato,,,Microsoft Dynamics Finance And Operations,steps,Create records in batch,Create records in batch in Microsoft Dynamics Finance and Operations
@@ -4285,11 +4255,6 @@ mixpanel,mixpanel,workato,,,Mixpanel,steps,Get funnel data,Get funnel data in Mi
 mixpanel,mixpanel,workato,,,Mixpanel,steps,Get funnel list,Get funnel list in Mixpanel
 mixpanel,mixpanel,workato,,,Mixpanel,steps,Get user info,Get user info in Mixpanel
 mixpanel,mixpanel,workato,,,Mixpanel,steps,Set property,Set  property in Mixpanel
-mongodb atlas,mongodb atlas,workato,,,MongoDB Atlas,steps,Delete documents,Delete documents from a collection in MongoDB Atlas
-mongodb atlas,mongodb atlas,workato,,,MongoDB Atlas,steps,Insert documents,Insert documents into a collection in MongoDB Atlas
-mongodb atlas,mongodb atlas,workato,,,MongoDB Atlas,steps,Replicate documents,Replicate documents into a collection in MongoDB Atlas
-mongodb atlas,mongodb atlas,workato,,,MongoDB Atlas,steps,Search documents,Search documents from a collection in MongoDB Atlas
-mongodb atlas,mongodb atlas,workato,,,MongoDB Atlas,steps,Update documents,Update documents in a collection in MongoDB Atlas
 namely,namely,workato,,,Namely,triggers,New event,New event in Namely
 namely,namely,workato,,,Namely,triggers,New employee profile,New employee profile in Namely
 namely,namely,workato,,,Namely,triggers,New/updated employee profile,New or updated employee profile in Namely
@@ -4530,8 +4495,6 @@ microsoft,outlook,workato,,,Outlook,steps,Send email,Send email from Outlook Mai
 microsoft,outlook,workato,,,Outlook,steps,Update contact,Update contact in Outlook
 microsoft,outlook,workato,,,Outlook,steps,Update calendar event,Update event in Outlook Calendar
 outsystems,outsystems,workato,,,OutSystems,triggers,New record,New record in OutSystems
-outsystems,outsystems,workato,,,OutSystems,triggers,New record,New record in OutSystems
-outsystems,outsystems,workato,,,OutSystems,triggers,New/updated record,New/updated record in OutSystems
 outsystems,outsystems,workato,,,OutSystems,triggers,New/updated record,New/updated record in OutSystems
 outsystems,outsystems,workato,,,OutSystems,steps,Create records,Create batch of records in OutSystems
 outsystems,outsystems,workato,,,OutSystems,steps,Create record,Create record in OutSystems
@@ -4586,8 +4549,6 @@ patientsource,patientsource,workato,,,PatientSource,steps,Get Patients List,Get 
 patientsource,patientsource,workato,,,PatientSource,steps,Update Admission,Update Admission  in Patient source
 patientsource,patientsource,workato,,,PatientSource,steps,Update Patient Details,Update Patient Details in Patient source
 oracle,oracle fusion cloud,workato,,,Oracle Fusion Cloud,triggers,New record,New object in Oracle Fusion Cloud
-oracle,oracle fusion cloud,workato,,,Oracle Fusion Cloud,triggers,New record,New object in Oracle Fusion Cloud
-oracle,oracle fusion cloud,workato,,,Oracle Fusion Cloud,triggers,New/updated record,New/updated object in Oracle Fusion Cloud
 oracle,oracle fusion cloud,workato,,,Oracle Fusion Cloud,triggers,New/updated record,New/updated object in Oracle Fusion Cloud
 oracle,oracle fusion cloud,workato,,,Oracle Fusion Cloud,steps,Custom action,Custom action in Oracle Fusion Cloud (Custom)
 oracle,oracle fusion cloud,workato,,,Oracle Fusion Cloud,steps,Search records using advanced query,Search records using advanced query in Oracle Fusion Cloud
@@ -5116,9 +5077,7 @@ safetyculture,safetyculture,workato,,,SafetyCulture,steps,Templates,Interact wit
 safetyculture,safetyculture,workato,,,SafetyCulture,steps,Users & Groups,Interact with Users & Groups in SafetyCulture
 safetyculture,safetyculture,workato,,,SafetyCulture,steps,Custom Action,Custom action in SafetyCulture
 quickbase,quickbase,workato,,,Quick Base,triggers,New record,New record in Quick Base
-quickbase,quickbase,workato,,,Quick Base,triggers,New record,New record in Quick Base
 quickbase,quickbase,workato,,,Quick Base,triggers,Scheduled record search using query,Scheduled record search using query in Quickbase
-quickbase,quickbase,workato,,,Quick Base,triggers,New/updated record,New/updated record in Quick Base
 quickbase,quickbase,workato,,,Quick Base,triggers,New/updated record,New/updated record in Quick Base
 quickbase,quickbase,workato,,,Quick Base,steps,Custom action,Custom action in Quick Base (Custom)
 quickbase,quickbase,workato,,,Quick Base,steps,Create record,Create record in Quick Base
@@ -5230,7 +5189,6 @@ ringcentral video,ringcentral video,workato,,,Ring Central Video,steps,Search ob
 ringcentral video,ringcentral video,workato,,,Ring Central Video,steps,Send SMS,Send SMS in RingCentral Video
 ringcentral video,ringcentral video,workato,,,Ring Central Video,steps,Update object,Update an object in RingCentral Video
 rally,rally,workato,,,Rally,triggers,Deleted record,Deleted record  in Rally
-rally,rally,workato,,,Rally,triggers,New/updated record,New/updated record  in Rally
 rally,rally,workato,,,Rally,triggers,New/updated record,New/updated record  in Rally
 rally,rally,workato,,,Rally,steps,Create record,Create record in Rally
 rally,rally,workato,,,Rally,steps,Custom action,Custom action in Rally
@@ -5356,7 +5314,7 @@ sailpoint,sailpoint,workato,,,SailPoint,steps,Upload Account Source File,This up
 salesforce,salesforce pardot,workato,,,Salesforce Pardot,triggers,New object,New object  in Pardot
 salesforce,salesforce pardot,workato,,,Salesforce Pardot,triggers,New/updated object,New/updated object  in Pardot
 salesforce,salesforce pardot,workato,,,Salesforce Pardot,steps,Create object,Create object in Pardot
-salesforce,salesforce pardot,workato,,,Salesforce Pardot,steps,Custom action,         Custom action in         Pardot
+salesforce,salesforce pardot,workato,,,Salesforce Pardot,steps,Custom action,Custom action in         Pardot
 salesforce,salesforce pardot,workato,,,Salesforce Pardot,steps,Get object details,Get object details in Pardot
 salesforce,salesforce pardot,workato,,,Salesforce Pardot,steps,Search objects,Search objects in Pardot
 salesforce,salesforce pardot,workato,,,Salesforce Pardot,steps,Update object,Update object in Pardot
@@ -5415,13 +5373,13 @@ shipstation,shipstation,workato,,,Ship Station,steps,Upsert record,Upsert record
 scout rfp,scout rfp,workato,,,Scout Rfp,triggers,New updated project,New updated project in Scout  RFP
 scout rfp,scout rfp,workato,,,Scout Rfp,steps,Create project,Create project in Scout  RFP
 scout rfp,scout rfp,workato,,,Scout Rfp,steps,Upload attachment,Upload attachment in Scout  RFP
-sap,sap odata,workato,,,SAP OData,triggers,New object,New object ​in SAP OData 
-sap,sap odata,workato,,,SAP OData,triggers,New/updated object,New/updated object ​in SAP OData 
+sap,sap odata,workato,,,SAP OData,triggers,New object,New object ​in SAP OData
+sap,sap odata,workato,,,SAP OData,triggers,New/updated object,New/updated object ​in SAP OData
 sap,sap odata,workato,,,SAP OData,steps,Custom action,Custom action in SAP OData (Custom)
-sap,sap odata,workato,,,SAP OData,steps,Create object,Create new object in ​SAP OData 
+sap,sap odata,workato,,,SAP OData,steps,Create object,Create new object in ​SAP OData
 sap,sap odata,workato,,,SAP OData,steps,Get object details by ID,Get object  details by ID
-sap,sap odata,workato,,,SAP OData,steps,Search object,Search for an object in ​SAP OData 
-sap,sap odata,workato,,,SAP OData,steps,Update object,Update object in ​Sap OData 
+sap,sap odata,workato,,,SAP OData,steps,Search object,Search for an object in ​SAP OData
+sap,sap odata,workato,,,SAP OData,steps,Update object,Update object in ​Sap OData
 shopware,shopware,workato,,,Shopware,triggers,New customer,New customer in Shopware
 shopware,shopware,workato,,,Shopware,triggers,New order,New order in Shopware
 shopware,shopware,workato,,,Shopware,steps,Get customer by ID,Get customer by ID in Shopware
@@ -6130,28 +6088,28 @@ wolken itsm,wolken itsm,workato,,,Wolken ITSM,steps,Get record details by ID,Get
 wolken itsm,wolken itsm,workato,,,Wolken ITSM,steps,Search records,Search records  in Wolken Software
 wolken itsm,wolken itsm,workato,,,Wolken ITSM,steps,Update record,Update record in Wolken Software
 wolken itsm,wolken itsm,workato,,,Wolken ITSM,steps,Upload attachment,Add an attachment to a ServiceRequest in Wolken Software
-woodwing assets,woodwing assets,workato,,,WoodWing Assets,triggers,New event,New  event  in  Assets 
-woodwing assets,woodwing assets,workato,,,WoodWing Assets,steps,Abort Checkout Object,Abort checkout an object in Assets 
+woodwing assets,woodwing assets,workato,,,WoodWing Assets,triggers,New event,New  event  in  Assets
+woodwing assets,woodwing assets,workato,,,WoodWing Assets,steps,Abort Checkout Object,Abort checkout an object in Assets
 woodwing assets,woodwing assets,workato,,,WoodWing Assets,steps,Browse Folder,Browse folders in Assets
-woodwing assets,woodwing assets,workato,,,WoodWing Assets,steps,Checkout Object,Checkout an object in Assets 
-woodwing assets,woodwing assets,workato,,,WoodWing Assets,steps,Copy Asset,Copy a folder or file in Assets 
+woodwing assets,woodwing assets,workato,,,WoodWing Assets,steps,Checkout Object,Checkout an object in Assets
+woodwing assets,woodwing assets,workato,,,WoodWing Assets,steps,Copy Asset,Copy a folder or file in Assets
 woodwing assets,woodwing assets,workato,,,WoodWing Assets,steps,Create AuthKey,Create an authKey in Assets
-woodwing assets,woodwing assets,workato,,,WoodWing Assets,steps,Create Folder,Create a folder in Assets 
-woodwing assets,woodwing assets,workato,,,WoodWing Assets,steps,Create Object,Create an object in Assets 
+woodwing assets,woodwing assets,workato,,,WoodWing Assets,steps,Create Folder,Create a folder in Assets
+woodwing assets,woodwing assets,workato,,,WoodWing Assets,steps,Create Object,Create an object in Assets
 woodwing assets,woodwing assets,workato,,,WoodWing Assets,steps,Create Relation,Create a relation of a certain type between two assets in Assets
-woodwing assets,woodwing assets,workato,,,WoodWing Assets,steps,Custom action,Custom action in  WoodWing 
-woodwing assets,woodwing assets,workato,,,WoodWing Assets,steps,Download File,Download a file in Assets 
-woodwing assets,woodwing assets,workato,,,WoodWing Assets,steps,Move Asset,Move a folder or file in Assets 
+woodwing assets,woodwing assets,workato,,,WoodWing Assets,steps,Custom action,Custom action in  WoodWing
+woodwing assets,woodwing assets,workato,,,WoodWing Assets,steps,Download File,Download a file in Assets
+woodwing assets,woodwing assets,workato,,,WoodWing Assets,steps,Move Asset,Move a folder or file in Assets
 woodwing assets,woodwing assets,workato,,,WoodWing Assets,steps,Promote Asset,Promote an asset to a previous version in Assets
 woodwing assets,woodwing assets,workato,,,WoodWing Assets,steps,Remove Relation,Remove one or more relations between assets in Assets
 woodwing assets,woodwing assets,workato,,,WoodWing Assets,steps,Retrieve Asset History,Retrieve history details of an asset in Assets
 woodwing assets,woodwing assets,workato,,,WoodWing Assets,steps,Revoke AuthKey,Revoke one or more authKeys in Assets
-woodwing assets,woodwing assets,workato,,,WoodWing Assets,steps,Search Object,Search for an object in WoodWing 
+woodwing assets,woodwing assets,workato,,,WoodWing Assets,steps,Search Object,Search for an object in WoodWing
 woodwing assets,woodwing assets,workato,,,WoodWing Assets,steps,Send E-mail,Send an e-mail to one or multiple recipients in Assets
 woodwing assets,woodwing assets,workato,,,WoodWing Assets,steps,Update AuthKey,Update an authKey in Assets
-woodwing assets,woodwing assets,workato,,,WoodWing Assets,steps,Update bulk Objects,Update bulk objects in Assets 
-woodwing assets,woodwing assets,workato,,,WoodWing Assets,steps,Update Object,Update an object in Assets 
-woodwing assets,woodwing assets,workato,,,WoodWing Assets,steps,ZIP download,Download multiple files as a ZIP file in  Assets 
+woodwing assets,woodwing assets,workato,,,WoodWing Assets,steps,Update bulk Objects,Update bulk objects in Assets
+woodwing assets,woodwing assets,workato,,,WoodWing Assets,steps,Update Object,Update an object in Assets
+woodwing assets,woodwing assets,workato,,,WoodWing Assets,steps,ZIP download,Download multiple files as a ZIP file in  Assets
 wordpress,wordpress,workato,,,WordPress.com,triggers,New comment,New comment on my WordPress blog
 wordpress,wordpress,workato,,,WordPress.com,triggers,New post created,New post created on WordPress
 wordpress,wordpress,workato,,,WordPress.com,steps,Custom action,Custom action in WordPress.com (Custom)
@@ -6160,26 +6118,26 @@ wordpress,wordpress,workato,,,WordPress.com,steps,Delete post,Delete post on Wor
 wordpress,wordpress,workato,,,WordPress.com,steps,Get details of likes for post,Get details of likes for a post in WordPress
 wordpress,wordpress,workato,,,WordPress.com,steps,Search post,Search for a post on WordPress
 woodwing studio,woodwing studio,workato,,,WoodWing Studio,triggers,New event,New event in WoodWing Studio
-woodwing studio,woodwing studio,workato,,,WoodWing Studio,steps,Copy object,Copy object in WoodWing Studio 
-woodwing studio,woodwing studio,workato,,,WoodWing Studio,steps,Create dossier,Create new dossier in WoodWing Studio 
-woodwing studio,woodwing studio,workato,,,WoodWing Studio,steps,Create Indesign Server Job,Create InDesign Server Job in WoodWing Studio 
-woodwing studio,woodwing studio,workato,,,WoodWing Studio,steps,Create object,Create new object in WoodWing Studio 
-woodwing studio,woodwing studio,workato,,,WoodWing Studio,steps,Create layout PDF,Create layout PDF in WoodWing Studio 
-woodwing studio,woodwing studio,workato,,,WoodWing Studio,steps,Download file from URL,Download file contents from URL in WoodWing Studio 
-woodwing studio,woodwing studio,workato,,,WoodWing Studio,steps,Get extension map,Get extension map in WoodWing Studio 
-woodwing studio,woodwing studio,workato,,,WoodWing Studio,steps,Get object,Get object in WoodWing Studio 
-woodwing studio,woodwing studio,workato,,,WoodWing Studio,steps,Get object template,Get object template in WoodWing Studio 
-woodwing studio,woodwing studio,workato,,,WoodWing Studio,steps,Get brands,Get brands in WoodWing Studio 
-woodwing studio,woodwing studio,workato,,,WoodWing Studio,steps,Get workflow status,Get object workflow status in WoodWing Studio 
-woodwing studio,woodwing studio,workato,,,WoodWing Studio,steps,Move object to Trash Can,Move objects to Thrash Can in WoodWing Studio 
-woodwing studio,woodwing studio,workato,,,WoodWing Studio,steps,Search object,Search object in WoodWing Studio 
-woodwing studio,woodwing studio,workato,,,WoodWing Studio,steps,Restore object,Restore object in WoodWing Studio 
-woodwing studio,woodwing studio,workato,,,WoodWing Studio,steps,Restore version,Restore object version in WoodWing Studio 
-woodwing studio,woodwing studio,workato,,,WoodWing Studio,steps,Save object,Save object in WoodWing Studio 
-woodwing studio,woodwing studio,workato,,,WoodWing Studio,steps,Send to,Send object to next status in WoodWing Studio 
-woodwing studio,woodwing studio,workato,,,WoodWing Studio,steps,Send to next,Send object to predefined next status in WoodWing Studio 
-woodwing studio,woodwing studio,workato,,,WoodWing Studio,steps,Update object properties,Update object properties in WoodWing Studio 
-woodwing studio,woodwing studio,workato,,,WoodWing Studio,steps,Abort checkout object,Abort checkout to unlock objects in WoodWing Studio 
+woodwing studio,woodwing studio,workato,,,WoodWing Studio,steps,Copy object,Copy object in WoodWing Studio
+woodwing studio,woodwing studio,workato,,,WoodWing Studio,steps,Create dossier,Create new dossier in WoodWing Studio
+woodwing studio,woodwing studio,workato,,,WoodWing Studio,steps,Create Indesign Server Job,Create InDesign Server Job in WoodWing Studio
+woodwing studio,woodwing studio,workato,,,WoodWing Studio,steps,Create object,Create new object in WoodWing Studio
+woodwing studio,woodwing studio,workato,,,WoodWing Studio,steps,Create layout PDF,Create layout PDF in WoodWing Studio
+woodwing studio,woodwing studio,workato,,,WoodWing Studio,steps,Download file from URL,Download file contents from URL in WoodWing Studio
+woodwing studio,woodwing studio,workato,,,WoodWing Studio,steps,Get extension map,Get extension map in WoodWing Studio
+woodwing studio,woodwing studio,workato,,,WoodWing Studio,steps,Get object,Get object in WoodWing Studio
+woodwing studio,woodwing studio,workato,,,WoodWing Studio,steps,Get object template,Get object template in WoodWing Studio
+woodwing studio,woodwing studio,workato,,,WoodWing Studio,steps,Get brands,Get brands in WoodWing Studio
+woodwing studio,woodwing studio,workato,,,WoodWing Studio,steps,Get workflow status,Get object workflow status in WoodWing Studio
+woodwing studio,woodwing studio,workato,,,WoodWing Studio,steps,Move object to Trash Can,Move objects to Thrash Can in WoodWing Studio
+woodwing studio,woodwing studio,workato,,,WoodWing Studio,steps,Search object,Search object in WoodWing Studio
+woodwing studio,woodwing studio,workato,,,WoodWing Studio,steps,Restore object,Restore object in WoodWing Studio
+woodwing studio,woodwing studio,workato,,,WoodWing Studio,steps,Restore version,Restore object version in WoodWing Studio
+woodwing studio,woodwing studio,workato,,,WoodWing Studio,steps,Save object,Save object in WoodWing Studio
+woodwing studio,woodwing studio,workato,,,WoodWing Studio,steps,Send to,Send object to next status in WoodWing Studio
+woodwing studio,woodwing studio,workato,,,WoodWing Studio,steps,Send to next,Send object to predefined next status in WoodWing Studio
+woodwing studio,woodwing studio,workato,,,WoodWing Studio,steps,Update object properties,Update object properties in WoodWing Studio
+woodwing studio,woodwing studio,workato,,,WoodWing Studio,steps,Abort checkout object,Abort checkout to unlock objects in WoodWing Studio
 workato,workato embedded,workato,1,,Workato Embedded,steps,Custom action,Custom action in  (Custom)
 workato,workato embedded,workato,1,,Workato Embedded,steps,Add member to customer account,Add Member to customer account in Workato Embedded
 workato,workato embedded,workato,1,,Workato Embedded,steps,Copy custom role,Copy Custom role in Workato Embedded customer account
@@ -6275,9 +6233,9 @@ workato,recipe function by workato,workato,1,,Recipe function by Workato,steps,R
 workato,recipe function by workato,workato,1,,Recipe function by Workato,steps,Wait for async calls,Wait for an async call to complete
 ruby,ruby,workato,,,Ruby,steps,Execute code,Execute ruby code
 workato,message template by workato,workato,1,,Message template by Workato,steps,Create message,Create message using  template
-workato,callable recipes by workato,workato,1,,Callable recipes by Workato,steps,Call recipe (synchronous),Call recipe 
+workato,callable recipes by workato,workato,1,,Callable recipes by Workato,steps,Call recipe (synchronous),Call recipe
 workato,callable recipes by workato,workato,1,,Callable recipes by Workato,steps,Call recipe (asynchronous),Call recipe  (do not wait for response)
-workato,callable recipes by workato,workato,1,,Callable recipes by Workato,steps,Return response from recipe,Return response from 
+workato,callable recipes by workato,workato,1,,Callable recipes by Workato,steps,Return response from recipe,Return response from
 workato,callable recipes by workato,workato,1,,Callable recipes by Workato,steps,Wait for async calls,Wait for async calls to complete
 workato,workato filestorage,workato,1,,Workato FileStorage,steps,Append to file,Append to file in Workato FileStorage
 workato,workato filestorage,workato,1,,Workato FileStorage,steps,Delete file,Delete file in Workato FileStorage
@@ -6299,7 +6257,6 @@ webhooks,webhooks,workato,,,Webhooks,triggers,New event via webhook,New event vi
 workato,variables by workato,workato,1,,Variables by Workato,steps,Clear all items from list,Clear all items from list
 workato,variables by workato,workato,1,,Variables by Workato,steps,Create list,Create list
 workato,variables by workato,workato,1,,Variables by Workato,steps,Create variable,Create variable
-workato,variables by workato,workato,1,,Variables by Workato,steps,Add items to list,Add items to list
 workato,variables by workato,workato,1,,Variables by Workato,steps,Add items to list,Add items to list
 workato,variables by workato,workato,1,,Variables by Workato,steps,Update variables,Update variables
 workato,workflow apps by workato,workato,1,,Workflow apps by Workato,triggers,New request,New request in a workflow app
@@ -6347,7 +6304,6 @@ workflow max,workflow max,workato,,,Workflow Max,steps,Search invoices,Search in
 workflow max,workflow max,workato,,,Workflow Max,steps,Search quotes,Search issued quotes for given date range inWorkflowMax
 workflow max,workflow max,workato,,,Workflow Max,steps,Update contact,Update Contact by UUID in WorkflowMax
 workday,workday web services,workato,,,Workday Web Services,triggers,New/updated business object,New/updated business object in Workday
-workday,workday web services,workato,,,Workday Web Services,triggers,New/updated business object,New/updated business object in Workday
 workday,workday web services,workato,,,Workday Web Services,steps,Get business object details,Get business object in Workday
 workday,workday web services,workato,,,Workday Web Services,steps,Search business object,Search business object in Workday
 workday,workday web services,workato,,,Workday Web Services,steps,Update business object,Update business object in Workday
@@ -6359,10 +6315,7 @@ xactly,xactly,workato,,,Xactly,steps,Read rows,Read rows in Xactly
 wrike,wrike,workato,,,Wrike,triggers,New comment,New comment in Wrike
 wrike,wrike,workato,,,Wrike,triggers,New event,New event in Wrike
 wrike,wrike,workato,,,Wrike,triggers,New/updated folder,New/updated folder in Wrike
-wrike,wrike,workato,,,Wrike,triggers,New/updated folder,New/updated folder in Wrike
 wrike,wrike,workato,,,Wrike,triggers,New/updated project,New/updated project in Wrike
-wrike,wrike,workato,,,Wrike,triggers,New/updated project,New/updated project in Wrike
-wrike,wrike,workato,,,Wrike,triggers,New/updated task,New/updated task in Wrike
 wrike,wrike,workato,,,Wrike,triggers,New/updated task,New/updated task in Wrike
 wrike,wrike,workato,,,Wrike,triggers,New/updated timelog,New/updated timelog in Wrike
 wrike,wrike,workato,,,Wrike,steps,Custom action,Custom action in Wrike (Custom)
@@ -6710,7 +6663,6 @@ aiforged,aiforged,power-automate,,1,AIForged (Preview) (Premium),steps,Get a par
 aiforged,aiforged,power-automate,,1,AIForged (Preview) (Premium),steps,Get a service by id,Get a service by id
 aiforged,aiforged,power-automate,,1,AIForged (Preview) (Premium),steps,Get a specific project,Get a specific project
 aiforged,aiforged,power-automate,,1,AIForged (Preview) (Premium),steps,Get a summary of verifications,Get a summary of verifications
-aiforged,aiforged,power-automate,,1,AIForged (Preview) (Premium),steps,Get a summary of verifications,Get a summary of verifications
 aiforged,aiforged,power-automate,,1,AIForged (Preview) (Premium),steps,Get a verification by id,Get a verification by id
 aiforged,aiforged,power-automate,,1,AIForged (Preview) (Premium),steps,Get a verification image shred,Get a verification image shred
 aiforged,aiforged,power-automate,,1,AIForged (Preview) (Premium),steps,Get all categories by project,Get all categories by project
@@ -6721,7 +6673,6 @@ aiforged,aiforged,power-automate,,1,AIForged (Preview) (Premium),steps,Get class
 aiforged,aiforged,power-automate,,1,AIForged (Preview) (Premium),steps,Get current logged in user,Get current logged in user
 aiforged,aiforged,power-automate,,1,AIForged (Preview) (Premium),steps,Get data types,Get data types
 aiforged,aiforged,power-automate,,1,AIForged (Preview) (Premium),steps,Get definition by Id,Get definition by Id
-aiforged,aiforged,power-automate,,1,AIForged (Preview) (Premium),steps,Get document images,Get document images
 aiforged,aiforged,power-automate,,1,AIForged (Preview) (Premium),steps,Get document images,Get document images
 aiforged,aiforged,power-automate,,1,AIForged (Preview) (Premium),steps,Get hierarchy of fields for a service,Get hierarchy of fields for a service
 aiforged,aiforged,power-automate,,1,AIForged (Preview) (Premium),steps,Get hierarchy of fields for all services in a project,Get hierarchy of fields for all services in a project
@@ -6767,11 +6718,9 @@ alkymi,alkymi,power-automate,,1,Alkymi (Preview) (Premium),steps,Upload Document
 alkymi,alkymi,power-automate,,1,Alkymi (Preview) (Premium),triggers,When An Alkymi Event Triggers,This trigger is executed when any of the selected Alkymi events occur.
 zendesk,zendesk sunshine,workato,,,Zendesk Sunshine,triggers,New organization,New organization in Zendesk Sunshine
 zendesk,zendesk sunshine,workato,,,Zendesk Sunshine,triggers,New ticket,New ticket in Zendesk Sunshine
-zendesk,zendesk sunshine,workato,,,Zendesk Sunshine,triggers,New ticket,New ticket in Zendesk Sunshine
 zendesk,zendesk sunshine,workato,,,Zendesk Sunshine,triggers,New/updated records,Trigger processes batches of new or updated records
 zendesk,zendesk sunshine,workato,,,Zendesk Sunshine,triggers,New user,New user in Zendesk Sunshine
 zendesk,zendesk sunshine,workato,,,Zendesk Sunshine,triggers,New/updated organization,New/updated organization in Zendesk Sunshine
-zendesk,zendesk sunshine,workato,,,Zendesk Sunshine,triggers,New/updated ticket,New/updated ticket in Zendesk Sunshine
 zendesk,zendesk sunshine,workato,,,Zendesk Sunshine,triggers,New/updated ticket,New/updated ticket in Zendesk Sunshine
 zendesk,zendesk sunshine,workato,,,Zendesk Sunshine,triggers,New/updated user,New/updated user in Zendesk Sunshine
 zendesk,zendesk sunshine,workato,,,Zendesk Sunshine,steps,Custom action,Custom action in Zendesk Sunshine (Custom)
@@ -7549,11 +7498,9 @@ microsoft,azure cognitive service for language,power-automate,,,Azure Cognitive 
 microsoft,azure cognitive service for language,power-automate,,,Azure Cognitive Service for Language,steps,Detect Language (V3.1) (Preview),The API returns the detected language and a numeric score between 0 and 1. Scores close to 1 indicate 100% certainty that the identified language is true. See the Language support for Language Detection for the list of supported languages.
 microsoft,azure cognitive service for language,power-automate,,,Azure Cognitive Service for Language,steps,Detect Language (V4) (Preview),The API returns the detected language and a numeric score between 0 and 1. Scores close to 1 indicate 100% certainty that the identified language is true. See the Language support for Language Detection for the list of supported languages.
 microsoft,azure cognitive service for language,power-automate,,,Azure Cognitive Service for Language,steps,Detect Language [DEPRECATED],This action has been deprecated. Please use Detect Language (V4) instead.
-microsoft,azure cognitive service for language,power-automate,,,Azure Cognitive Service for Language,steps,Detect Language [DEPRECATED],This action has been deprecated. Please use Detect Language (V4) instead.
 microsoft,azure cognitive service for language,power-automate,,,Azure Cognitive Service for Language,steps,Detect Personal Information (V3.1),"The API returns a list of entities with personal information (""SSN"", ""Bank Account"" etc) in the document. For the list of supported entity types, check Supported Personally Identifiable Information (PII) entity categories. See the Supported languages in Azure Cognitive Service for Language for the list of supported languages."
 microsoft,azure cognitive service for language,power-automate,,,Azure Cognitive Service for Language,steps,Detect Personal Information (V4) (Preview),"The API returns a list of entities with personal information (""SSN"", ""Bank Account"" etc) in the document. For the list of supported entity types, check Supported Personally Identifiable Information (PII) entity categories. See the Supported languages in Azure Cognitive Service for Language for the list of supported languages."
 microsoft,azure cognitive service for language,power-automate,,,Azure Cognitive Service for Language,steps,Detect Sentiment (V2) [DEPRECATED],This action has been deprecated. Please use Sentiment (V4) instead.
-microsoft,azure cognitive service for language,power-automate,,,Azure Cognitive Service for Language,steps,Detect Sentiment [DEPRECATED],This action has been deprecated. Please use Sentiment (V4) instead.
 microsoft,azure cognitive service for language,power-automate,,,Azure Cognitive Service for Language,steps,Detect Sentiment [DEPRECATED],This action has been deprecated. Please use Sentiment (V4) instead.
 microsoft,azure cognitive service for language,power-automate,,,Azure Cognitive Service for Language,steps,Entities [DEPRECATED],This action has been deprecated. Please use Named Entity Recognition (V4) instead.
 microsoft,azure cognitive service for language,power-automate,,,Azure Cognitive Service for Language,steps,Entity Linking (V3.0),The API returns a list of recognized entities with links to a well-known knowledge base. See the language support for the list of supported languages.
@@ -7564,7 +7511,6 @@ microsoft,azure cognitive service for language,power-automate,,,Azure Cognitive 
 microsoft,azure cognitive service for language,power-automate,,,Azure Cognitive Service for Language,steps,Key Phrases (V3.0),The API returns a list of strings denoting the key phrases in the input text. See the Language support for Key Phrase Extraction for the list of supported languages.
 microsoft,azure cognitive service for language,power-automate,,,Azure Cognitive Service for Language,steps,Key Phrases (V3.1) (Preview),The API returns a list of strings denoting the key phrases in the input text. See the Language support for Key Phrase Extraction for the list of supported languages.
 microsoft,azure cognitive service for language,power-automate,,,Azure Cognitive Service for Language,steps,Key Phrases (V4) (Preview),The API returns a list of strings denoting the key phrases in the input text. See the Language support for Key Phrase Extraction for the list of supported languages.
-microsoft,azure cognitive service for language,power-automate,,,Azure Cognitive Service for Language,steps,Key Phrases [DEPRECATED],This action has been deprecated. Please use Key Phrases (V4) instead.
 microsoft,azure cognitive service for language,power-automate,,,Azure Cognitive Service for Language,steps,Key Phrases [DEPRECATED],This action has been deprecated. Please use Key Phrases (V4) instead.
 microsoft,azure cognitive service for language,power-automate,,,Azure Cognitive Service for Language,steps,Named Entity Recognition (V3.0),"The API returns a list of general named entities in a given document. For the list of supported entity types, check Supported Named Entity Recognition (NER) entity categories."
 microsoft,azure cognitive service for language,power-automate,,,Azure Cognitive Service for Language,steps,Named Entity Recognition (V3.1) (Preview),"The API returns a list of general named entities in a given document. For the list of supported entity types, check Supported Named Entity Recognition (NER) entity categories."
@@ -7829,7 +7775,6 @@ binance.us,binance.us,power-automate,,1,Binance.us (Independent Publisher) (Prev
 bing maps,bing maps,power-automate,,,Bing Maps,steps,Get location by address,"Get the location information associated with an address. If no location is found, an empty result will be returned."
 bing maps,bing maps,power-automate,,,Bing Maps,steps,Get location by point,Get the location information associated with latitude and longitude coordinates.
 bing maps,bing maps,power-automate,,,Bing Maps,steps,Get route,Calculate a route using waypoints.
-bing maps,bing maps,power-automate,,,Bing Maps,steps,Get route [DEPRECATED],This action has been deprecated. Please use Get route instead.
 bing maps,bing maps,power-automate,,,Bing Maps,steps,Get route [DEPRECATED],This action has been deprecated. Please use Get route instead.
 bing maps,bing maps,power-automate,,,Bing Maps,steps,Get static map,Get static map.
 bing maps,bing maps,power-automate,,,Bing Maps,steps,Get static map [DEPRECATED],This action has been deprecated. Please use Get static map instead.
@@ -9345,7 +9290,6 @@ cqc data,cqc data,power-automate,,1,CQC Data (Independent Publisher) (Preview) (
 cqc data,cqc data,power-automate,,1,CQC Data (Independent Publisher) (Preview) (Premium),steps,Location a place where a Proivder operates,Retrieve a list of locations Locations are sites where a Provider operates
 cqc data,cqc data,power-automate,,1,CQC Data (Independent Publisher) (Preview) (Premium),steps,Locations related to the given Provider id,"Retrieve the list of locations for this provider Locations are sites where a Provider operates Some Providers will have only one location, whereas others may have many"
 cqc data,cqc data,power-automate,,1,CQC Data (Independent Publisher) (Preview) (Premium),steps,Provider Inspection Areas for the given location,"Retrieve the list of Provider Inspection Areas which have been inspected for this organisation at Provider level, excluding any that may have been globally retired (covering services no longer inspected by CQC) Although an Inspection area may be Superseded globally for the purpose of new inspections, it will remain active (along with the ratings for that area) at a given organisation until it has been re-inspected under the superseding inspection area(s)"
-cqc data,cqc data,power-automate,,1,CQC Data (Independent Publisher) (Preview) (Premium),steps,Provider Inspection Areas for the given location,"Retrieve the list of Provider Inspection Areas which have been inspected for this organisation at Provider level, excluding any that may have been globally retired (covering services no longer inspected by CQC) Although an Inspection area may be Superseded globally for the purpose of new inspections, it will remain active (along with the ratings for that area) at a given organisation until it has been re-inspected under the superseding inspection area(s)"
 cqc data,cqc data,power-automate,,1,CQC Data (Independent Publisher) (Preview) (Premium),steps,"Providers, organisations for health, social care services regulated by the CQC",Get a list of provider codes
 cqc data,cqc data,power-automate,,1,CQC Data (Independent Publisher) (Preview) (Premium),steps,Retrieve a list of inspection areas related to the specified location area,"Retrieve the list of Inspection Areas which have been inspected at this location excluding any that may have been globally retired (covering services no longer inspected by CQC) Although an Inspection area may be Superseded globally for the purpose of new inspections, it will remain active (along with the ratings for that area) at a given organisation until it has been re-inspected under the superseding inspection area(s)"
 cqc data,cqc data,power-automate,,1,CQC Data (Independent Publisher) (Preview) (Premium),steps,Retrieve a PDF file or alternatively the text content of th specified report,Retrieve a PDF file or its text content of the report specified in the URL
@@ -9453,7 +9397,6 @@ cloudmersive document conversion,cloudmersive document conversion,power-automate
 cloudmersive document conversion,cloudmersive document conversion,power-automate,,1,Cloudmersive Document Conversion (Preview) (Premium),steps,Get images from a Word DOCX document,Returns the images defined in the Word Document (DOCX) format file
 cloudmersive document conversion,cloudmersive document conversion,power-automate,,1,Cloudmersive Document Conversion (Preview) (Premium),steps,Get information about an image,"Get details from an image such as size, format and MIME type, compression, EXIF data such as location, DPI, unique colors, transparency information, and more"
 cloudmersive document conversion,cloudmersive document conversion,power-automate,,1,Cloudmersive Document Conversion (Preview) (Premium),steps,Get pages and content from a Word DOCX document,Returns the pages and contents of each page defined in the Word Document (DOCX) format file
-cloudmersive document conversion,cloudmersive document conversion,power-automate,,1,Cloudmersive Document Conversion (Preview) (Premium),steps,"Get rows and cells from a Excel XLSX spreadsheet, worksheet",Returns the rows and cells defined in the Excel Spreadsheet worksheet
 cloudmersive document conversion,cloudmersive document conversion,power-automate,,1,Cloudmersive Document Conversion (Preview) (Premium),steps,"Get rows and cells from a Excel XLSX spreadsheet, worksheet",Returns the rows and cells defined in the Excel Spreadsheet worksheet
 cloudmersive document conversion,cloudmersive document conversion,power-automate,,1,Cloudmersive Document Conversion (Preview) (Premium),steps,Get sections from a Word DOCX document,Returns the sections defined in the Word Document (DOCX) format file
 cloudmersive document conversion,cloudmersive document conversion,power-automate,,1,Cloudmersive Document Conversion (Preview) (Premium),steps,"Get styles from a Excel XLSX spreadsheet, worksheet",Returns the style defined in the Excel Spreadsheet
@@ -11743,7 +11686,6 @@ fhirbase,fhirbase,power-automate,,1,FHIRBase (Preview) (Premium),steps,Get Appoi
 fhirbase,fhirbase,power-automate,,1,FHIRBase (Preview) (Premium),steps,Get Appointment History,"A reply to an appointment request for a patient and/or practitioner(s), such as a confirmation or rejection."
 fhirbase,fhirbase,power-automate,,1,FHIRBase (Preview) (Premium),steps,Get Appointment History,"A booking of a healthcare event among patient(s), practitioner(s), related person(s) and/or device(s) for a specific date/time. This may result in one or more Encounter(s)."
 fhirbase,fhirbase,power-automate,,1,FHIRBase (Preview) (Premium),steps,Get Appointment ID,"A booking of a healthcare event among patient(s), practitioner(s), related person(s) and/or device(s) for a specific date/time. This may result in one or more Encounter(s)."
-fhirbase,fhirbase,power-automate,,1,FHIRBase (Preview) (Premium),steps,Get Appointment ID History,"A booking of a healthcare event among patient(s), practitioner(s), related person(s) and/or device(s) for a specific date/time. This may result in one or more Encounter(s)."
 fhirbase,fhirbase,power-automate,,1,FHIRBase (Preview) (Premium),steps,Get Appointment ID History,"A booking of a healthcare event among patient(s), practitioner(s), related person(s) and/or device(s) for a specific date/time. This may result in one or more Encounter(s)."
 fhirbase,fhirbase,power-automate,,1,FHIRBase (Preview) (Premium),steps,Get Appointment Response History,"A reply to an appointment request for a patient and/or practitioner(s), such as a confirmation or rejection."
 fhirbase,fhirbase,power-automate,,1,FHIRBase (Preview) (Premium),steps,Get AppointmentResponse ID Version,"A reply to an appointment request for a patient and/or practitioner(s), such as a confirmation or rejection."
@@ -14493,10 +14435,8 @@ mavim-improve,mavim-improve,power-automate,,1,Mavim-iMprove (Premium),steps,Get 
 mavim-improve,mavim-improve,power-automate,,1,Mavim-iMprove (Premium),steps,Get Topic,Get a specific topic by the DCV indentifier.
 mavim-improve,mavim-improve,power-automate,,1,Mavim-iMprove (Premium),steps,Get types for a topic,Get a collection of types for an specific topic supplied by the topic id.
 mavim-improve,mavim-improve,power-automate,,1,Mavim-iMprove (Premium),steps,Move a topic down in the branch,Move a specific topic one place down in the branch.
-mavim-improve,mavim-improve,power-automate,,1,Mavim-iMprove (Premium),steps,Move a topic down in the branch,Move a specific topic one place down in the branch.
 mavim-improve,mavim-improve,power-automate,,1,Mavim-iMprove (Premium),steps,Move a topic to the bottom of the branch,Move a specific topic to the bottom of the branch.
 mavim-improve,mavim-improve,power-automate,,1,Mavim-iMprove (Premium),steps,Move a topic to the top of the branch,Move a specific topic to the top of the branch.
-mavim-improve,mavim-improve,power-automate,,1,Mavim-iMprove (Premium),steps,Move a topic up in the branch,Move a specific topic one place up in the branch.
 mavim-improve,mavim-improve,power-automate,,1,Mavim-iMprove (Premium),steps,Move a topic up in the branch,Move a specific topic one place up in the branch.
 mavim-improve,mavim-improve,power-automate,,1,Mavim-iMprove (Premium),steps,Update boolean field from topic,Updates a specific boolean field by field and fieldset identifier for a specific topic.
 mavim-improve,mavim-improve,power-automate,,1,Mavim-iMprove (Premium),steps,Update date field from topic,Updates a specific single value date field by field and fieldset identifier for a specific topic.
@@ -14570,7 +14510,6 @@ marketo,marketo ma,power-automate,,,Marketo MA,steps,Delete Static List,Deletes 
 marketo,marketo ma,power-automate,,,Marketo MA,steps,Describe Lead,"Returns metadata about lead objects in the target instance, including a list of all fields available for interaction via the APIs. Required Permissions: Read-Only Lead, Read-Write Lead"
 marketo,marketo ma,power-automate,,,Marketo MA,steps,Describe Lead2,"Returns list of searchable fields on lead objects in the target instance. Required Permissions: Read-Only Lead, Read-Write Lead"
 marketo,marketo ma,power-automate,,,Marketo MA,steps,Describe Program Member,"Returns metadata about program member objects in the target instance, including a list of all fields available for interaction via the APIs. Required Permissions: Read-Only Lead, Read-Write Lead"
-marketo,marketo ma,power-automate,,,Marketo MA,steps,Describe Program Member,"Returns metadata about program member objects in the target instance, including a list of all fields available for interaction via the APIs. Required Permissions: Read-Only Lead, Read-Write Lead"
 marketo,marketo ma,power-automate,,,Marketo MA,steps,Enqueue Export Lead Job,"Enqueue export job. This will place export job in queue, and will start the job when computing resources become available. The export job must be in ""Created"" state. Use Get Export Lead Job Status endpoint to retrieve status of export job. Required Permissions: Read-Only Lead"
 marketo,marketo ma,power-automate,,,Marketo MA,steps,Enqueue Export Program Member Job,"Enqueue export job. This will place export job in queue, and will start the job when computing resources become available. The export job must be in ""Created"" state."
 marketo,marketo ma,power-automate,,,Marketo MA,steps,Get Campaign By Id,"Returns the record of a campaign by its id. Required Permissions: Read-Only Campaigns, Read-Write Campaigns"
@@ -14598,7 +14537,6 @@ marketo,marketo ma,power-automate,,,Marketo MA,steps,Get Lead by Id,"Retrieves a
 marketo,marketo ma,power-automate,,,Marketo MA,steps,Get Lead Field by Name,"Retrieves metadata for single lead field. Required Permissions: Read-Write Schema Standard Field, Read-Write Schema Custom Field"
 marketo,marketo ma,power-automate,,,Marketo MA,steps,Get Leads by Filter Type,"Returns a list of up to 300 leads based on a list of values in a particular field. Required Permissions: Read-Only Lead, Read-Write Lead"
 marketo,marketo ma,power-automate,,,Marketo MA,steps,Get Leads By List Id,"Retrieves person records which are members of the given static list. Required Permissions: Read-Only Lead, Read-Write Lead"
-marketo,marketo ma,power-automate,,,Marketo MA,steps,Get Leads By List Id,"Retrieves person records which are members of the given static list. Required Permissions: Read-Only Lead, Read-Write Lead"
 marketo,marketo ma,power-automate,,,Marketo MA,steps,Get Leads by Program Id,"Retrieves a list of leads which are members of the designated program. Required Permissions: Read-Only Lead, Read-Write Lead"
 marketo,marketo ma,power-automate,,,Marketo MA,steps,Get List by Id,"Returns a list record by its id. Required Permissions: Read-Only Lead, Read-Write Lead"
 marketo,marketo ma,power-automate,,,Marketo MA,steps,Get Lists,"Returns a set of static list records based on given filter parameters. Required Permissions: Read-Only Lead, Read-Write Lead"
@@ -14615,7 +14553,6 @@ marketo,marketo ma,power-automate,,,Marketo MA,steps,Get Smart Lists,Retrieves a
 marketo,marketo ma,power-automate,,,Marketo MA,steps,Get Static List by Id,Retrieves a Static List record by its id. Required Permissions: Read-Asset or Read-Write Asset
 marketo,marketo ma,power-automate,,,Marketo MA,steps,Get Static List by Name,Retrieves a Static List record by its name. Required Permissions: Read-Asset or Read-Write Asset
 marketo,marketo ma,power-automate,,,Marketo MA,steps,Get Static Lists,Retrieves a list of Static List records. Required Permissions: Read-Asset or Read-Write Asset
-marketo,marketo ma,power-automate,,,Marketo MA,steps,Identity,Retrieve an access token from Marketo. Calls to this endpoint are not counted towards API call limit.
 marketo,marketo ma,power-automate,,,Marketo MA,steps,Identity,Retrieve an access token from Marketo. Calls to this endpoint are not counted towards API call limit.
 marketo,marketo ma,power-automate,,,Marketo MA,steps,Import Leads,Imports a file containing data records into the target instance. Required Permissions: Read-Write Lead
 marketo,marketo ma,power-automate,,,Marketo MA,steps,Import Program Members,Imports a file containing data records into the target instance. Required Permissions: Read-Write Lead
@@ -14691,7 +14628,6 @@ microsoft,microsoft kaizala,power-automate,,,Microsoft Kaizala (Preview),steps,D
 microsoft,microsoft kaizala,power-automate,,,Microsoft Kaizala (Preview),steps,Post like or comment to a message,This operation allows you to post like or comment to a message in a specific Kaizala group that you’re a member of.
 microsoft,microsoft kaizala,power-automate,,,Microsoft Kaizala (Preview),steps,Remove a subgroup from group,This operation allows you to remove a subgroup as member of another group.
 microsoft,microsoft kaizala,power-automate,,,Microsoft Kaizala (Preview),steps,Remove user from a group,This operation allows you to remove a user from a group.
-microsoft,microsoft kaizala,power-automate,,,Microsoft Kaizala (Preview),steps,Send action on a group,This operation allows you to send an Action to a specific Kaizala group that you’re a member of.
 microsoft,microsoft kaizala,power-automate,,,Microsoft Kaizala (Preview),steps,Send action on a group,This operation allows you to send an Action to a specific Kaizala group that you’re a member of.
 microsoft,microsoft kaizala,power-automate,,,Microsoft Kaizala (Preview),steps,Send action reminder on a group,This operation allows you to send a reminder of an action to a specific Kaizala group that you’re a member of.
 microsoft,microsoft kaizala,power-automate,,,Microsoft Kaizala (Preview),steps,Send reply to a message,Send reply to a message.
@@ -16029,7 +15965,6 @@ microsoft,outlook tasks [deprecated],power-automate,,,Outlook Tasks [DEPRECATED]
 microsoft,outlook tasks [deprecated],power-automate,,,Outlook Tasks [DEPRECATED],steps,Get a task group [DEPRECATED],This operation gets a specific task group.
 microsoft,outlook tasks [deprecated],power-automate,,,Outlook Tasks [DEPRECATED],steps,List all task folders [DEPRECATED],Returns a list of all the task folders in your mailbox.
 microsoft,outlook tasks [deprecated],power-automate,,,Outlook Tasks [DEPRECATED],steps,List all task groups [DEPRECATED],Returns a list of all the task groups in your mailbox.
-microsoft,outlook tasks [deprecated],power-automate,,,Outlook Tasks [DEPRECATED],steps,List all task groups [DEPRECATED],Returns a list of all the task groups in your mailbox.
 microsoft,outlook tasks [deprecated],power-automate,,,Outlook Tasks [DEPRECATED],steps,List all tasks [DEPRECATED],Returns a list of all your tasks in your mailbox.
 microsoft,outlook tasks [deprecated],power-automate,,,Outlook Tasks [DEPRECATED],steps,List all tasks [DEPRECATED],This operation returns a list of all your tasks.
 microsoft,outlook tasks [deprecated],power-automate,,,Outlook Tasks [DEPRECATED],steps,List task folders in group [DEPRECATED],Returns a list of all the task folders in the specified task group in your mailbox.
@@ -16401,7 +16336,6 @@ planner,planner,power-automate,,,Planner,steps,Create a bucket [DEPRECATED],This
 planner,planner,power-automate,,,Planner,steps,Create a task,Create a new task in Planner.
 planner,planner,power-automate,,,Planner,steps,Create a task (Preview),Create a new task in Planner.
 planner,planner,power-automate,,,Planner,steps,Create a task [DEPRECATED],This action has been deprecated. Please use Create a task instead.
-planner,planner,power-automate,,,Planner,steps,Create a task [DEPRECATED],This action has been deprecated. Please use Create a task instead.
 planner,planner,power-automate,,,Planner,steps,Delete a task (Preview),Deletes an existing Planner task.
 planner,planner,power-automate,,,Planner,steps,Get a task,Get an existing Planner task.
 planner,planner,power-automate,,,Planner,steps,Get a task [DEPRECATED],This action has been deprecated. Please use Get a task instead.
@@ -16410,14 +16344,11 @@ planner,planner,power-automate,,,Planner,steps,Get task details,Get the task det
 planner,planner,power-automate,,,Planner,steps,Get task details [DEPRECATED],This action has been deprecated. Please use Get task details instead.
 planner,planner,power-automate,,,Planner,steps,List buckets,List the buckets in a plan.
 planner,planner,power-automate,,,Planner,steps,List buckets [DEPRECATED],This action has been deprecated. Please use List buckets instead.
-planner,planner,power-automate,,,Planner,steps,List buckets [DEPRECATED],This action has been deprecated. Please use List buckets instead.
-planner,planner,power-automate,,,Planner,steps,List my plans [DEPRECATED],List the plans the user has subscribed to.
 planner,planner,power-automate,,,Planner,steps,List my plans [DEPRECATED],List the plans the user has subscribed to.
 planner,planner,power-automate,,,Planner,steps,List my tasks,List the tasks assigned to me.
 planner,planner,power-automate,,,Planner,steps,List my tasks [DEPRECATED],This action has been deprecated. Please use List my tasks instead.
 planner,planner,power-automate,,,Planner,steps,List plans for a group,List plans owned by the group specified.
 planner,planner,power-automate,,,Planner,steps,List tasks,List the tasks in a plan.
-planner,planner,power-automate,,,Planner,steps,List tasks [DEPRECATED],This action has been deprecated. Please use List tasks instead.
 planner,planner,power-automate,,,Planner,steps,List tasks [DEPRECATED],This action has been deprecated. Please use List tasks instead.
 planner,planner,power-automate,,,Planner,steps,Remove assignees from a task,Remove assignees from an existing Planner task.
 planner,planner,power-automate,,,Planner,steps,Update a task,Update an existing Planner task.
@@ -16427,11 +16358,9 @@ planner,planner,power-automate,,,Planner,steps,Update task details,Update the ta
 planner,planner,power-automate,,,Planner,steps,Update task details [DEPRECATED],This action has been deprecated. Please use Update task details instead.
 planner,planner,power-automate,,,Planner,triggers,When a new task is created,This operation triggers when a new task is created.
 planner,planner,power-automate,,,Planner,triggers,When a new task is created [DEPRECATED],This action has been deprecated. Please use When a new task is created instead.
-planner,planner,power-automate,,,Planner,triggers,When a new task is created [DEPRECATED],This action has been deprecated. Please use When a new task is created instead.
 planner,planner,power-automate,,,Planner,triggers,When a task is assigned to me,This operation triggers when a task is assigned to me.
 planner,planner,power-automate,,,Planner,triggers,When a task is assigned to me [DEPRECATED],This action has been deprecated. Please use When a task is assigned to me instead.
 planner,planner,power-automate,,,Planner,triggers,When a task is completed,This operation triggers when a task is completed.
-planner,planner,power-automate,,,Planner,triggers,When a task is completed [DEPRECATED],This action has been deprecated. Please use When a task is completed instead.
 planner,planner,power-automate,,,Planner,triggers,When a task is completed [DEPRECATED],This action has been deprecated. Please use When a task is completed instead.
 pilot things,pilot things,power-automate,,1,Pilot Things (Preview) (Premium),steps,Add a message,Add a message
 pilot things,pilot things,power-automate,,1,Pilot Things (Preview) (Premium),steps,Add a tag to thing,Add a tag to thing
@@ -16466,13 +16395,11 @@ pilot things,pilot things,power-automate,,1,Pilot Things (Preview) (Premium),ste
 pilot things,pilot things,power-automate,,1,Pilot Things (Preview) (Premium),steps,Get stats average,Get stats average
 pilot things,pilot things,power-automate,,1,Pilot Things (Preview) (Premium),steps,Get stats count,Get stats count
 pilot things,pilot things,power-automate,,1,Pilot Things (Preview) (Premium),steps,Get stats last,Get stats last
-pilot things,pilot things,power-automate,,1,Pilot Things (Preview) (Premium),steps,Get stats last,Get stats last
 pilot things,pilot things,power-automate,,1,Pilot Things (Preview) (Premium),steps,Get stats max,Get stats max
 pilot things,pilot things,power-automate,,1,Pilot Things (Preview) (Premium),steps,Get stats measurements,Get stats measurements
 pilot things,pilot things,power-automate,,1,Pilot Things (Preview) (Premium),steps,Get stats min,Get stats min
 pilot things,pilot things,power-automate,,1,Pilot Things (Preview) (Premium),steps,Get stats repartition,Get stats repartition
 pilot things,pilot things,power-automate,,1,Pilot Things (Preview) (Premium),steps,Get stats sum,Get stats sum
-pilot things,pilot things,power-automate,,1,Pilot Things (Preview) (Premium),steps,Get the active model of a thing,Get the active model of a thing
 pilot things,pilot things,power-automate,,1,Pilot Things (Preview) (Premium),steps,Get the active model of a thing,Get the active model of a thing
 pilot things,pilot things,power-automate,,1,Pilot Things (Preview) (Premium),steps,Get the list of available operations,Get the list of available operations
 pilot things,pilot things,power-automate,,1,Pilot Things (Preview) (Premium),steps,Get the list of tags,Get the list of tags
@@ -18365,7 +18292,6 @@ smartdialog,smartdialog,power-automate,,1,SmartDialog (Premium),steps,WhatsApp O
 smartdialog,smartdialog,power-automate,,1,SmartDialog (Premium),triggers,New Message,When a new message arrives to a 2-Way service.
 smtp,smtp,power-automate,,,SMTP,steps,Send Email (V3),This operation sends an email to one or more recipients.
 smtp,smtp,power-automate,,,SMTP,steps,Send Email [DEPRECATED],This action has been deprecated. Please use Send Email (V3) instead.
-smtp,smtp,power-automate,,,SMTP,steps,Send Email [DEPRECATED],This action has been deprecated. Please use Send Email (V3) instead.
 snowflake,snowflake,power-automate,,1,Snowflake (Preview) (Premium),steps,Cancel the Execution of a Statement,Cancel the Execution of a Statement
 snowflake,snowflake,power-automate,,1,Snowflake (Preview) (Premium),steps,Check the Status and Get Results,Check the Status of the Execution of a Statement and Get the Results
 snowflake,snowflake,power-automate,,1,Snowflake (Preview) (Premium),steps,Convert result set rows from array to objects,Convert result set rows from array to objects
@@ -18801,7 +18727,6 @@ signl4,signl4 - mobile alerting,power-automate,,1,SIGNL4 - Mobile Alerting (Prev
 signl4,signl4 - mobile alerting,power-automate,,1,SIGNL4 - Mobile Alerting (Preview) (Premium),steps,Gets a specified attachment of a specified alert,Gets a specified attachment of a specified alert.
 signl4,signl4 - mobile alerting,power-automate,,1,SIGNL4 - Mobile Alerting (Preview) (Premium),steps,Gets a subscription's user licenses,Gets a subscription's user licenses.
 signl4,signl4 - mobile alerting,power-automate,,1,SIGNL4 - Mobile Alerting (Preview) (Premium),steps,Gets a subscription's voice number licenses,Gets a subscription's voice number licenses.
-signl4,signl4 - mobile alerting,power-automate,,1,SIGNL4 - Mobile Alerting (Preview) (Premium),steps,Gets alert settings of a specific team,Gets alert settings of a specific team.
 signl4,signl4 - mobile alerting,power-automate,,1,SIGNL4 - Mobile Alerting (Preview) (Premium),steps,Gets alert settings of a specific team,Gets alert settings of a specific team.
 signl4,signl4 - mobile alerting,power-automate,,1,SIGNL4 - Mobile Alerting (Preview) (Premium),steps,Gets alerts paged,Gets alerts paged.
 signl4,signl4 - mobile alerting,power-automate,,1,SIGNL4 - Mobile Alerting (Preview) (Premium),steps,Gets event sources of a specific team,Gets event sources of a specific team.
@@ -20813,9 +20738,7 @@ hubspot,hubspot,zapier,,,HubSpot Integrations,steps,Find Deal,
 hubspot,hubspot,zapier,,,HubSpot Integrations,steps,Get Owner by Email,
 hubspot,hubspot,zapier,,,HubSpot Integrations,steps,Get Owner by ID,
 hubspot,hubspot,zapier,,,HubSpot Integrations,steps,Find Product,
-hubspot,hubspot,zapier,,,HubSpot Integrations,steps,Find or Create Company,
 hubspot,hubspot,zapier,,,HubSpot Integrations,steps,Find or Create Contact,
-hubspot,hubspot,zapier,,,HubSpot Integrations,steps,Find or Create Deal,
 hubspot,hubspot,zapier,,,HubSpot Integrations,steps,Find or Create Product,
 activecampaign,activecampaign,zapier,,,ActiveCampaign Integrations,triggers,New or Updated Custom Object Record,
 activecampaign,activecampaign,zapier,,,ActiveCampaign Integrations,triggers,Deal Task Completed,
@@ -20988,7 +20911,6 @@ asana,asana,zapier,,,Asana Integrations,steps,Find Project,
 asana,asana,zapier,,,Asana Integrations,steps,Find Task in Project,
 asana,asana,zapier,,,Asana Integrations,steps,Find User,
 asana,asana,zapier,,,Asana Integrations,steps,Find or Create Task,
-asana,asana,zapier,,,Asana Integrations,steps,Find or Create Task,
 asana,asana,zapier,,,Asana Integrations,steps,Create Duplicate Task,
 asana,asana,zapier,,,Asana Integrations,steps,Create Section,
 asana,asana,zapier,,,Asana Integrations,steps,Create Project,
@@ -20998,7 +20920,6 @@ asana,asana,zapier,,,Asana Integrations,steps,API Request (Beta),
 asana,asana,zapier,,,Asana Integrations,steps,Find Section in Project,
 asana,asana,zapier,,,Asana Integrations,steps,Find Task by ID,
 asana,asana,zapier,,,Asana Integrations,steps,Find or Create Project,
-asana,asana,zapier,,,Asana Integrations,steps,Find or Create Task,
 leadconnector,leadconnector,zapier,,,LeadConnector Integrations,steps,Add/Update Contact,
 leadconnector,leadconnector,zapier,,,LeadConnector Integrations,steps,Add Lead to Campaign,
 leadconnector,leadconnector,zapier,,,LeadConnector Integrations,steps,Add Task,
@@ -21190,7 +21111,6 @@ klaviyo,klaviyo,zapier,,,Klaviyo Integrations,steps,Find or Create Subscriber,
 klaviyo,klaviyo,zapier,,,Klaviyo Integrations,steps,Update Subscriber,
 klaviyo,klaviyo,zapier,,,Klaviyo Integrations,steps,App Extensions (Beta),
 klaviyo,klaviyo,zapier,,,Klaviyo Integrations,steps,Find a Subscriber,
-klaviyo,klaviyo,zapier,,,Klaviyo Integrations,steps,Find or Create Subscriber,
 twilio,twilio,zapier,,,Twilio Integrations,steps,Call Phone,
 twilio,twilio,zapier,,,Twilio Integrations,steps,Send SMS,
 wordpress,wordpress,zapier,,,WordPress Integrations,steps,Upload Media,
@@ -21300,7 +21220,6 @@ square,square,zapier,,,Square Integrations,steps,Send Invoice,
 square,square,zapier,,,Square Integrations,steps,App Extensions (Beta),
 square,square,zapier,,,Square Integrations,steps,Find Customer,
 square,square,zapier,,,Square Integrations,steps,Find Order,
-square,square,zapier,,,Square Integrations,steps,Find Order,
 square,square,zapier,,,Square Integrations,steps,Create Appointment,
 square,square,zapier,,,Square Integrations,steps,Create Customer,
 square,square,zapier,,,Square Integrations,steps,Create Paid Order,
@@ -21308,13 +21227,11 @@ square,square,zapier,,,Square Integrations,steps,Remove Customer From Group,
 square,square,zapier,,,Square Integrations,steps,Update Customer,
 square,square,zapier,,,Square Integrations,steps,API Request (Beta),
 square,square,zapier,,,Square Integrations,steps,Find Service,
-square,square,zapier,,,Square Integrations,steps,Find Customer,
 constant contact,constant contact,zapier,,,Constant Contact Integrations,steps,Create Contact,
 constant contact,constant contact,zapier,,,Constant Contact Integrations,steps,App Extensions (Beta),
 constant contact,constant contact,zapier,,,Constant Contact Integrations,steps,Find or Create Contact,
 constant contact,constant contact,zapier,,,Constant Contact Integrations,steps,Update Contact,
 constant contact,constant contact,zapier,,,Constant Contact Integrations,steps,API Request (Beta),
-constant contact,constant contact,zapier,,,Constant Contact Integrations,steps,Find or Create Contact,
 eventbrite,eventbrite,zapier,,,Eventbrite Integrations,steps,Create Event,
 eventbrite,eventbrite,zapier,,,Eventbrite Integrations,steps,API Request (Beta),
 eventbrite,eventbrite,zapier,,,Eventbrite Integrations,steps,Find or Create Event,
@@ -21673,7 +21590,6 @@ freshsales,freshsales suite,zapier,,,Freshsales Suite Integrations,steps,Create 
 freshsales,freshsales suite,zapier,,,Freshsales Suite Integrations,steps,Create Deal,
 freshsales,freshsales suite,zapier,,,Freshsales Suite Integrations,steps,Update Deal,
 freshsales,freshsales suite,zapier,,,Freshsales Suite Integrations,steps,Find Contact by Unique Fields,
-freshsales,freshsales suite,zapier,,,Freshsales Suite Integrations,steps,Search the matching Contacts,
 process street,process street,zapier,,,Process Street Integrations,triggers,Workflow Run Completed,
 process street,process street,zapier,,,Process Street Integrations,triggers,Data Set Record Deleted,
 process street,process street,zapier,,,Process Street Integrations,triggers,New Comment Attachment,
@@ -22558,9 +22474,6 @@ connectwise manage,connectwise manage,zapier,,,ConnectWise Manage Integrations,s
 connectwise manage,connectwise manage,zapier,,,ConnectWise Manage Integrations,steps,Create Ticket Note,
 connectwise manage,connectwise manage,zapier,,,ConnectWise Manage Integrations,steps,Update Ticket,
 connectwise manage,connectwise manage,zapier,,,ConnectWise Manage Integrations,steps,API Request (Beta),
-connectwise manage,connectwise manage,zapier,,,ConnectWise Manage Integrations,steps,Find Contact,
-connectwise manage,connectwise manage,zapier,,,ConnectWise Manage Integrations,steps,Find Company,
-connectwise manage,connectwise manage,zapier,,,ConnectWise Manage Integrations,steps,Find Ticket,
 acculynx,acculynx,zapier,,,AccuLynx Integrations,steps,Create Lead,
 safetyculture,safetyculture,zapier,,,SafetyCulture Integrations,steps,Create Inspection Edit Link,
 safetyculture,safetyculture,zapier,,,SafetyCulture Integrations,steps,Create Public Inspection Report Link,
@@ -22603,7 +22516,6 @@ whatconverts,whatconverts,zapier,,,WhatConverts Integrations,steps,Update Lead,
 whatconverts,whatconverts,zapier,,,WhatConverts Integrations,steps,Find or Create Lead,
 whatconverts,whatconverts,zapier,,,WhatConverts Integrations,steps,Create Lead,
 whatconverts,whatconverts,zapier,,,WhatConverts Integrations,steps,Find Lead,
-whatconverts,whatconverts,zapier,,,WhatConverts Integrations,steps,Find or Create Lead,
 zoho,zoho invoice,zapier,,,Zoho Invoice Integrations,triggers,New Contact Person,
 zoho,zoho invoice,zapier,,,Zoho Invoice Integrations,triggers,New Estimate,
 zoho,zoho invoice,zapier,,,Zoho Invoice Integrations,triggers,New Item,
@@ -23036,9 +22948,6 @@ affinity,affinity,zapier,,,Affinity Integrations,steps,Create a Organization,
 affinity,affinity,zapier,,,Affinity Integrations,steps,Create a Note,
 affinity,affinity,zapier,,,Affinity Integrations,steps,Create a Person,
 affinity,affinity,zapier,,,Affinity Integrations,steps,Find an Organization,
-affinity,affinity,zapier,,,Affinity Integrations,steps,Find an Opportunity,
-affinity,affinity,zapier,,,Affinity Integrations,steps,Find an Organization,
-affinity,affinity,zapier,,,Affinity Integrations,steps,Find a Person,
 affinity,affinity,zapier,,,Affinity Integrations,steps,Find or Create list entry,
 affinity,affinity,zapier,,,Affinity Integrations,steps,Find or Create person,
 thryv,thryv,zapier,,,Thryv Integrations,steps,Create Busy Time,
@@ -23862,7 +23771,6 @@ todoist,todoist,zapier,,,Todoist Integrations,steps,Create Project,
 todoist,todoist,zapier,,,Todoist Integrations,steps,Update Task,
 todoist,todoist,zapier,,,Todoist Integrations,steps,API Request (Beta),
 todoist,todoist,zapier,,,Todoist Integrations,steps,Find Task,
-todoist,todoist,zapier,,,Todoist Integrations,steps,Find or Create project.,
 todoist,todoist,zapier,,,Todoist Integrations,steps,Find or Create Item,
 insightly,insightly,zapier,,,Insightly Integrations,steps,Create Record,
 insightly,insightly,zapier,,,Insightly Integrations,steps,Find Record,
@@ -23946,7 +23854,6 @@ salesmsg,salesmsg,zapier,,,Salesmsg Integrations,steps,Create or Update Contact,
 salesmsg,salesmsg,zapier,,,Salesmsg Integrations,steps,Phone Number Lookup (PhoneCheckr),
 salesmsg,salesmsg,zapier,,,Salesmsg Integrations,steps,Send a Text Message (SMS / MMS),
 salesmsg,salesmsg,zapier,,,Salesmsg Integrations,steps,App Extensions (Beta),
-salesmsg,salesmsg,zapier,,,Salesmsg Integrations,steps,Find Contact,
 salesmsg,salesmsg,zapier,,,Salesmsg Integrations,steps,Find Contact,
 salesmsg,salesmsg,zapier,,,Salesmsg Integrations,steps,Create Note,
 salesmsg,salesmsg,zapier,,,Salesmsg Integrations,steps,Send a Group Text Message (SMS / MMS),
@@ -24299,13 +24206,6 @@ daylite,daylite,zapier,,,Daylite Integrations,steps,Find Person,
 daylite,daylite,zapier,,,Daylite Integrations,steps,Find Opportunity,
 daylite,daylite,zapier,,,Daylite Integrations,steps,Find Task,
 daylite,daylite,zapier,,,Daylite Integrations,steps,Find or Create Object,
-daylite,daylite,zapier,,,Daylite Integrations,steps,Find or Create Company,
-daylite,daylite,zapier,,,Daylite Integrations,steps,Find or Create Contact,
-daylite,daylite,zapier,,,Daylite Integrations,steps,Find or Create Person,
-daylite,daylite,zapier,,,Daylite Integrations,steps,Find or Create Note,
-daylite,daylite,zapier,,,Daylite Integrations,steps,Find or Create Opportunity,
-daylite,daylite,zapier,,,Daylite Integrations,steps,Find or Create Opportunity,
-daylite,daylite,zapier,,,Daylite Integrations,steps,Find or Create Project,
 chili piper,chili piper,zapier,,,Chili Piper Integrations,triggers,New Meeting,
 chili piper,chili piper,zapier,,,Chili Piper Integrations,triggers,Meeting Rescheduled,
 wp all export pro,wp all export pro,zapier,,,WP All Export Pro Integrations,triggers,New Export File,
